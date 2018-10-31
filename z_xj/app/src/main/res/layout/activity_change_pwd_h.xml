@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dp"
+	    android:orientation="horizontal" 
+	    android:gravity="center_vertical"
+	    android:background="#FFF"
+	    >
+        
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:contentDescription="@string/image"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/back_arrow" />
+        
+        <TextView 
+	        android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+	        android:text="@string/change_password_h"
+	        android:gravity="center"
+	        android:textSize="18sp"
+	        />
+	    
+	    <TextView 
+	        android:id="@+id/save"
+	        android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:textSize="18sp"
+            android:layout_marginRight="8dp"
+	        />
+    	
+    </LinearLayout>
+    
+    
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFEFEF"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/img_background_top_radius" >
+
+            <EditText
+                android:id="@+id/oldPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/old_password_h"
+                android:inputType="textPassword"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/img_background_center_radius" >
+
+            <EditText
+                android:id="@+id/newPwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/new_password_h"
+                android:inputType="textPassword"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/img_background_bottom_radius" >
+
+            <EditText
+                android:id="@+id/rePwd"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/transparent"
+                android:hint="@string/repeat_new_password_h"
+                android:inputType="textPassword"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+        <TextView 
+	        android:id="@+id/submit"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:background="#FFF"
+	        android:layout_marginBottom="20dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="3dp"
+	        android:text="@string/comfirm_h"
+	        android:textColor="#FF0B0B"
+	        android:textSize="18sp"
+	        android:gravity="center"
+	        />
+        
+    </LinearLayout>
+
+</LinearLayout>

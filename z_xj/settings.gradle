@@ -1,0 +1,4 @@
+include ':imageMap'
+include ':jcvideoplayer_lib'
+include ':widget'
+include ':app'

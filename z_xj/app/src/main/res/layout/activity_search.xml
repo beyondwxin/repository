@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="44dp"
+	    android:orientation="horizontal" 
+	    android:gravity="center_vertical"
+	    android:layout_marginLeft="8dp"
+	    android:layout_marginRight="8dp"
+	    >
+        
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/back_arrow" />
+    	
+        <LinearLayout 
+            android:layout_width="0dp"
+            android:layout_height="34dp"
+            android:background="@drawable/search_shape_corner"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"
+            android:focusable="true"
+			android:focusableInTouchMode="true"
+            >
+            
+            <EditText
+                android:id="@+id/search_key" 
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="14sp"
+                android:hint="@string/search_key_word"
+                android:textColorHint="#555"
+                />
+            
+            <ImageView 
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:padding="6dp"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/sp_search"
+                />
+            
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="@string/search_text"
+            android:gravity="center_vertical"
+            />
+        
+    </LinearLayout>
+    
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/search_record"
+            android:textSize="14sp"
+            android:textColor="#555"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+        
+        <ImageView 
+            android:id="@+id/del_record"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:padding="5dp"
+            android:layout_marginLeft="4dp"
+            android:src="@drawable/search_del"
+            android:layout_alignParentLeft="true"
+            />
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/record_list"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@drawable/list_separator_line"
+	    android:dividerHeight="1dp"
+	    android:listSelector="@android:color/transparent"  
+        >
+    </ListView>
+    
+</LinearLayout>

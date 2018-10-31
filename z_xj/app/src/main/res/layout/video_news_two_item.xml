@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:padding="5dp"
+     >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#FFF"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/commentCountNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="#FFFFFF" 
+            />
+
+        <ImageView
+            android:id="@+id/commentImg"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/commentCountNumber"
+            android:contentDescription="@string/image"
+            android:src="@drawable/template_pic_typ8_comment"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/video_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_toLeftOf="@id/commentImg"
+            android:textColor="#000000"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+        android:id="@+id/videocontroller1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" 
+        android:layout_marginBottom="0dp"
+        />
+     
+     <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        >
+        
+        <TextView 
+            android:id="@+id/publish_time"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+        	android:textColor="#aab1b3"
+        	android:textSize="@dimen/news_list_degist"
+            />
+        
+        <View 
+            android:layout_width="0dp"
+        	android:layout_height="15dp"
+        	android:layout_weight="1"            
+        	/>
+        
+        <TextView 
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:gravity="center_vertical"
+        	android:textColor="#aab1b3"
+        	android:textSize="@dimen/news_list_degist"
+        	android:layout_marginRight="2dp"
+            />
+        
+        <ImageView 
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_marginTop="1dp"
+	        android:src="@drawable/comment_num"    
+            />
+        
+    </LinearLayout>
+     
+     
+        
+     <TextView
+        android:id="@+id/newsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_bg"
+        android:textColor="#FFFFFF"
+        android:text="推广"
+        android:gravity="right|center"
+        android:layout_gravity="right"
+        android:layout_marginBottom="3dp"
+        android:textSize="@dimen/news_list_newstag"
+        android:visibility="gone"
+        />
+    
+
+</LinearLayout>

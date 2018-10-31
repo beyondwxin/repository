@@ -1,0 +1,709 @@
+﻿﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta id="viewport" name="viewport" content="width=320; initial-scale=1; maximum-scale=1;minimum-scale=1;user-scalable=0;" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="zh" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<title>黑龙江日报</title>
+<link href="css/index.css" type="text/css" rel="stylesheet" />
+<link type="text/css" href="css/video/video.css" rel="stylesheet" />
+<style>
+			#validateCode {
+				width: 80px;
+				height: 25px;
+				line-height: 25px;
+			}
+			
+			.validateBox {
+				text-align: center;
+			}
+			
+			.validateImg {
+				vertical-align: top;
+			}
+			
+			{
+				width:30px;
+				height:30px;
+				float:left；
+			}
+
+			#htmlHeader div{
+				float:left；
+			}
+
+
+
+		</style>
+</head>
+
+<body>
+	<div class="wrapper" id="content">
+		
+		
+		
+		<header class="head" id="htmlHeader">
+			
+		</header>
+
+		<div id="htmlIntroduction">
+		
+		</div>
+		<div id="htmlMedias" class="htmlMedias">
+			
+		</div>
+		<div class="detail" id="htmlDetail">
+			
+		</div>
+		
+		<div class="relat_block3" id="htmlSurvey">
+		
+		</div>
+		
+		<div class="share_box" id="share">
+		</div>
+		
+		<div class="relat_block3" id="htmlHotNews">
+		</div>
+		
+		<div id="htmlSubscribe">
+			
+		</div>
+		
+		<div class="relat_block3" id="htmlRelat_post">
+			
+		</div>
+		
+		<div class="relat_block3" id="htmlRelat_video">
+		
+		</div>
+		
+		<div class="relat_block3" id="htmlNewcomments">
+			
+		</div>
+		
+		<!-- 广告 -->
+		<div id="htmlAdBanner">
+		</div>
+		
+	</div>
+	<div id="pre_text" class="pre_text">
+		<div class="pre_loading"></div>
+	</div>
+	
+	
+	<!-- 模板 header -->
+	<script id="tmpHeader" type="text/html">
+		<h1 class="title">{{#title}}</h1>
+		<div class="info clearfix">
+			<img class="left speak" src="imgs/read_news.png" onclick="speak()"></img>
+			<span class="left time">{{publishtime | dateFormatPublish:'yyyy-MM-dd'}} </span>
+			<span class="left">{{source}} {{author}}</span>
+			
+		</div>
+		<hr>
+	</script>
+	
+	<!-- 模板 introduction --> 
+    <script id="tmpIntroduction" type="text/html">
+		{{if leadRead && leadRead != ""}}
+		<div class="introduction">
+			<span class="red">导语：</span>{{leadRead}}
+		</div>
+		{{/if}}
+	</script>
+	
+	<!-- 模板 detail -->
+	<script id="tmpDetail" type="text/html">
+		{{#htmlbody}}
+	</script>
+	
+	<!-- 模板 medias -->
+	<script id="tmpMedias" type="text/html">
+	 {{each mediaList}}
+			{{if $value.type == 2}}
+			<div class="video_warp">
+				<a href="#" class="poster_warp" data-vsrc="{{$value.filePath}}/{{$value.fileName}}">
+					<img src="{{$value.filePath}}/{{$value.fileName}}.jpg" />
+					<div class="v_bigplaybtn">
+						<i class="iconfont"></i>
+					</div>
+				</a>
+			{{else if $value.type == 'audio'}}
+			<div class="audio_warp">
+				<audio controls="controls" preload="preload" src="{{$value.source_url}}" ></audio>
+			{{else if $value.type == 'img'}}
+			<div class="image_warp">
+				<img src="{{$value.source_url}}" width="{{$value.width}}" height="{{$value.height}}" />
+			{{/if}}
+			{{if $value.type != 'audio_64' && $value.type != 'audio_128'}}
+				{{if $value.title && $value.title != ""}}
+				<p>{{#$value.title}}</p>
+				{{/if}}
+				{{if $value.summary && $value.summary != ""}}
+				<p>{{#$value.summary}}</p>
+				{{/if}}
+			{{/if}}
+		</div>
+    {{/each}}
+	</script>
+	
+	<!--
+		视频模版
+    	作者：coolyilang@foxmail.com
+    	时间：2017-05-12
+    	描述：
+    -->
+	<script id="tmpVideo" type="text/html">
+		<div class="video_warp">
+			<a href="#" class="poster_warp" data-vsrc="{{url}}">
+				<img src="{{img}}" />
+				<div class="v_bigplaybtn">
+					<i class="iconfont" style="opacity: 1.0;"></i>
+				</div>
+			</a>
+		</div>
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	<!-- 模板 Relat_post -->
+	<script id="tmpRelat_post" type="text/html">
+		<h3 class="block_titile"><span>相关新闻</span></h3>
+		<div class="relat_post">
+		{{each re_docs}}
+			{{if $value.type == '1'}}
+			<h3><a href="#" data-id="{{$value.docid}}" data-tagid="{{$value.tagid}}" data-type="{{$value.type}}">{{$value.title}}</a></h3>
+			{{/if}}
+		{{/each}}
+		</div>
+	</script>
+	
+	<!-- 模板 Relat_video -->
+	<script id="tmpRelat_video" type="text/html">
+		<h3 class="block_titile"><span>相关视频</span></h3>
+		<div class="relat_video">
+			<ul class="clearfix">
+			{{each re_docs}}
+				{{if $value.type == '5'}}
+				<li>
+					<a href="#" data-id="{{$value.docid}}" data-tagid="{{$value.tagid}}" data-type="{{$value.type}}" class="img_warp"><img src="{{$value.img_url}}" /><div class="time">{{$value.times}}</div><i class="icon_paly"></i></a>
+					<h3><a href="#" data-id="{{$value.docid}}" data-tagid="{{$value.tagid}}" data-type="{{$value.type}}">{{$value.title}}</a></h3>
+				</li>
+				{{/if}}
+			{{/each}}
+			</ul>
+		</div>
+	</script>
+	
+	<!-- 两列式投票展示 -->
+		<script id="vote2" type="text/html">
+			{{if surveyList.length > 0}}
+			<h3 class="block_titile"><span>投票</span></h3>
+			<div class="survey_block" id="survey_block">
+				{{each surveyList as surveyItem surveyIndex}} {{if surveyItem.summary != ""}}
+				<h4 class="survey_title"><font color="red">简介：</font>{{surveyItem.summary}}</h4> {{/if}} {{if surveyItem.type == 0}}
+				<!-- 投票 -->
+				<div class="surveyItem_warp" id="surveyItem_{{surveyItem.id}}">
+					{{if surveyItem.isvoteflag==1}}
+					<h4 class="survey_title">
+						{{surveyItem.title}}
+						<span class="smaller">({{if surveyItem.maxitemnumber>1}}
+						多选
+						{{else}}
+						单选
+						{{/if}})
+						</span>
+					</h4>
+					<ul class="items">
+						{{if surveyItem.maxitemnumber>1}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li class="checkbox_li tow_line">
+							{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+							<div class="vote_img_box">
+								{{if choiceItem.summary && choiceItem.summary!=''}}
+								<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+									<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+								</a>
+								{{else}}
+								<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" /> {{/if}}
+							</div>
+							{{/if}}
+								<span class="checkbox_warp tow_line_input">
+									<input type="checkbox" id="checkbox{{surveyItem.id}}_{{choiceIndex}}" name="dx" data-surveyIndex="{{surveyIndex}}" data-choiceIndex="{{choiceIndex}}" data-survey_id="{{surveyItem.id}}" data-poll_id="{{choiceItem.id}}" />
+								</span>
+								<label for="checkbox{{surveyItem.id}}_{{choiceIndex}}" class="tow_line_text">
+									<font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}
+								</label>
+						</li>
+						{{/each}} {{else}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li class="radio_li tow_line">
+							{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+							<div class="vote_img_box">
+								{{if choiceItem.summary && choiceItem.summary!=''}}
+								<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+									<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+								</a>
+								{{else}}
+								<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" /> {{/if}}
+							</div>
+							{{/if}}
+							<span class="radio_warp tow_line_input">
+										<input type="radio" id="radio{{surveyItem.id}}_{{choiceIndex}}" name="dx_{{surveyIndex}}" data-surveyIndex="{{surveyIndex}}" data-choiceIndex="{{choiceIndex}}" data-survey_id="{{surveyItem.id}}" data-poll_id="{{choiceItem.id}}" />
+									</span>
+							<label for="radio{{surveyItem.id}}_{{choiceIndex}}" class="tow_line_text">
+										<font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}
+									</label>
+						</li>
+						{{/each}} {{/if}}
+					</ul>
+					<div class='validateBox'>
+						<input type="number" id='validateCode' placeholder="请输入验证码" />
+						<img class="validateImg" src="{{serverurl}}/code/getCode.do?memcode={{member.memcode}}">
+					</div>
+					<a href="#" class="sub_btn" data-surveyIndex="{{surveyIndex}}">提交</a> {{else if surveyItem.isvoteflag == 0}}
+					<h4 class="survey_title">{{surveyItem.title}}</h4>
+					<!-- 显示结果 -->
+					<ul class="items items_result" id="surveyResult_{{surveyItem.id}}">
+						{{if surveyItem.showType != 1}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li>
+							<h5>
+									{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+											{{if choiceItem.summary && choiceItem.summary!=''}}
+												<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+													<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+												</a>
+											{{else}}
+												<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+											{{/if}}
+									{{/if}}
+									<font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}
+								</h5>
+							<div class="proportion">
+								<span class="bar" style="width:{{choiceItem.preo_val}}%"></span>
+								<span class="preo_val">
+										{{if surveyItem.showVoteCount ==1}}
+											{{choiceItem.count}} / 
+										{{/if}}
+										{{choiceItem.preo_val}}%
+									</span>
+							</div>
+						</li>
+						{{/each}} {{else}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li class="tow_line">
+							{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+							<div class="vote_img_box">
+								{{if choiceItem.summary && choiceItem.summary!=''}}
+								<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+									<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+								</a>
+								{{else}}
+								<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" /> {{/if}}
+							</div>
+							{{/if}}
+							<h5 class="tow_line_text ">
+									<font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}
+								</h5>
+							<div class="proportion">
+								<span class="bar" style="width:{{choiceItem.preo_val}}%"></span>
+								<span class="preo_val">
+										{{if surveyItem.showVoteCount ==1}}
+											{{choiceItem.count}} / 
+										{{/if}}
+										{{choiceItem.preo_val}}%
+									</span>
+							</div>
+						</li>
+						{{/each}} {{/if}}
+					</ul>
+					{{/if}}
+				</div>
+				{{/if}} {{/each}}
+			</div>
+			{{/if}}
+
+		</script>
+
+		<!-- 模板 survey  -->
+		<script id="tmpSurvey" type="text/html">
+			{{if surveyList.length > 0}}
+			<h3 class="block_titile"><span>投票</span></h3>
+			<div class="survey_block" id="survey_block">
+				{{each surveyList as surveyItem surveyIndex}} {{if surveyItem.summary != ""}}
+				<h4 class="survey_title"><font color="red">简介：</font>{{surveyItem.summary}}</h4> {{/if}} {{if surveyItem.type == 0}}
+				<!-- 投票 -->
+				<div class="surveyItem_warp" id="surveyItem_{{surveyItem.id}}">
+					{{if surveyItem.isvoteflag==1}}
+					<h4 class="survey_title">
+						{{surveyItem.title}}
+						<span class="smaller">({{if surveyItem.maxitemnumber>1}}
+						多选
+						{{else}}
+						单选
+						{{/if}})
+						</span>
+					</h4>
+					<ul class="items">
+						{{if surveyItem.maxitemnumber>1}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li class="checkbox_li">
+							<span class="checkbox_warp">
+								<input type="checkbox" id="checkbox{{surveyItem.id}}_{{choiceIndex}}" name="dx" data-surveyIndex="{{surveyIndex}}" data-choiceIndex="{{choiceIndex}}" data-survey_id="{{surveyItem.id}}" data-poll_id="{{choiceItem.id}}" />
+							</span>
+							<label for="checkbox{{surveyItem.id}}_{{choiceIndex}}">
+								{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+									{{if choiceItem.summary && choiceItem.summary!=''}}
+										<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+											<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+										</a>
+									{{else}}
+										<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+									{{/if}}
+								{{/if}}
+								<div>
+									<font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}
+								</div>
+							</label>
+						</li>
+						{{/each}} {{else}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li class="radio_li">
+							<span class="radio_warp">
+								<input type="radio" id="radio{{surveyItem.id}}_{{choiceIndex}}" name="dx_{{surveyIndex}}" data-surveyIndex="{{surveyIndex}}" data-choiceIndex="{{choiceIndex}}" data-survey_id="{{surveyItem.id}}" data-poll_id="{{choiceItem.id}}" />
+							</span>
+							<label for="radio{{surveyItem.id}}_{{choiceIndex}}">
+								{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+									{{if choiceItem.summary && choiceItem.summary!=''}}
+										<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+											<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+										</a>
+									{{else}}
+										<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+									{{/if}}
+								{{/if}}
+								<div>
+									<font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}
+								</div>
+							</label>
+						</li>
+						{{/each}} {{/if}}
+					</ul>
+					<div class='validateBox'>
+						<input type="number" id='validateCode' placeholder="请输入验证码" />
+						<img class="validateImg" src="{{serverurl}}/code/getCode.do?memcode={{member.memcode}}">
+					</div>
+					<a href="#" class="sub_btn" data-surveyIndex="{{surveyIndex}}">提交</a> {{else if surveyItem.isvoteflag == 0}}
+					<h4 class="survey_title">{{surveyItem.title}}</h4>
+					<!-- 显示结果 -->
+					<ul class="items items_result" id="surveyResult_{{surveyItem.id}}">
+						{{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+						<li>
+							{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+								{{if choiceItem.summary && choiceItem.summary!=''}}
+									<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+										<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+									</a>
+								{{else}}
+									<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+								{{/if}}
+							{{/if}}
+							<h5><font color="red">{{choiceIndex+1}}.</font>{{choiceItem.body}}</h5>
+							<div class="proportion">
+								<span class="bar" style="width:{{choiceItem.preo_val}}%"></span>
+								<span class="preo_val">
+									{{if surveyItem.showVoteCount ==1}}
+										{{choiceItem.count}} / 
+									{{/if}}
+									{{choiceItem.preo_val}}%
+								</span>
+							</div>
+						</li>
+						{{/each}}
+					</ul>
+					{{/if}}
+				</div>
+				{{else}}
+				<!--  问卷     -->
+				<h3 class="survey_title"><b>{{surveyItem.title}}</b></h3>
+				<div id="surveyItem_{{surveyItem.id}}">
+					{{each surveyItem.listVoteQuestion as question questionIndex}}
+					<div class="surveyItem_warp">
+						{{if surveyItem.isvoteflag==1}}
+						<h4 class="survey_title">{{questionIndex+1}}. {{question.question}}<span class="smaller">({{if question.select_mode==1}}
+							多选
+							{{else}}
+							单选
+						{{/if}})</span></h4>
+						<ul class="items">
+							{{if question.select_mode ==1}} {{each question.listVoteItem as choiceItem choiceIndex}}
+							<li class="checkbox_li">
+								<span class="checkbox_warp">
+									<input type="checkbox" id="checkbox{{question.id}}_{{choiceIndex}}" name="dx" data-questionIndex="{{questionIndex}}" data-surveyIndex="{{surveyIndex}}" data-choiceIndex="{{choiceIndex}}" data-survey_id="{{surveyItem.id}}" data-poll_id="{{choiceItem.id}}" />
+								</span>
+								<label for="checkbox{{question.id}}_{{choiceIndex}}">
+									{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+										{{if choiceItem.summary && choiceItem.summary!=''}}
+											<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+												<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+											</a>
+										{{else}}
+											<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+										{{/if}}
+									{{/if}}
+									{{choiceItem.body}}
+								</label>
+							</li>
+							{{/each}} {{else}} {{each question.listVoteItem as choiceItem choiceIndex}}
+							<li class="radio_li">
+								<span class="radio_warp">
+										<input type="radio" id="radio{{question.id}}_{{choiceIndex}}" name="dx_{{questionIndex}}" data-questionIndex="{{questionIndex}}" data-surveyIndex="{{questionIndex}}" data-choiceIndex="{{choiceIndex}}" data-survey_id="{{surveyItem.id}}" data-poll_id="{{choiceItem.id}}" />
+									</span>
+								<label for="radio{{question.id}}_{{choiceIndex}}">
+									{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+										{{if choiceItem.summary && choiceItem.summary!=''}}
+											<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+												<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+											</a>
+										{{else}}
+											<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+										{{/if}}
+									{{/if}}
+									{{choiceItem.body}}
+								</label>
+							</li>
+							{{/each}} {{/if}}
+						</ul>
+						{{else if surveyItem.isvoteflag == 0}}
+						<h4 class="survey_title">{{questionIndex+1}}.{{question.question}}</h4>
+						<!-- 显示结果 -->
+						<ul class="items items_result" id="surveyResult_{{question.id}}">
+							{{each question.listVoteItem as choiceItem choiceIndex}}
+							<li>
+								{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+									{{if choiceItem.summary && choiceItem.summary!=''}}
+										<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+											<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+										</a>
+									{{else}}
+										<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+									{{/if}}
+								{{/if}}
+								{{choiceItem.body}}
+								<div class="proportion">
+									<span class="bar" style="width:{{choiceItem.preo_val}}%"></span>
+									<span class="preo_val">
+											{{if surveyItem.showVoteCount ==1}}
+												{{choiceItem.count}} / 
+											{{/if}}
+											{{choiceItem.preo_val}}%
+										</span>
+								</div>
+							</li>
+							{{/each}}
+						</ul>
+						{{/if}}
+					</div>
+					{{/each}}
+				</div>
+				{{if surveyItem.isvoteflag == 1}}
+				<div class='validateBox'>
+					<input type="number" id='validateCode' placeholder="请输入验证码" />
+					<img class="validateImg" src="{{serverurl}}/code/getCode.do?memcode={{member.memcode}}">
+				</div>
+				<a href="javascript:void(0);" class="sub_btn" data-surveyIndex="{{surveyIndex}}">提交</a> {{/if}} {{/if}} {{/each}}
+			</div>
+			{{/if}}
+		</script>
+
+		<!-- 模板 survey显示结果  -->
+		<script id="tmpSurveyResult" type="text/html">
+			{{if surveyItem.type == 0}}
+			<h4 class="survey_title">{{surveyItem.title}}</h4>
+			<ul class="items items_result" id="surveyResult_{{surveyItem.id}}">
+				{{if surveyItem.showType != 1}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+				<li>
+					<h5>
+						{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+							{{if choiceItem.summary && choiceItem.summary!=''}}
+								<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+									<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+								</a>
+							{{else}}
+								<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+							{{/if}}
+						{{/if}}
+							<div>
+								<font color="red">{{choiceIndex+1}}. </font>{{choiceItem.body}}
+							</div>
+						</h5>
+					<div class="proportion">
+						<span class="bar" style="width:{{choiceItem.preo_val}}%"></span>
+						<span class="preo_val">
+								{{if surveyItem.showVoteCount ==1}}
+									{{choiceItem.count}} / 
+								{{/if}}
+								{{choiceItem.preo_val}}%
+							</span>
+					</div>
+				</li>
+				{{/each}} {{else}} {{each surveyItem.listVoteItem as choiceItem choiceIndex}}
+				<li class="tow_line">
+					{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+					<div class="vote_img_box">
+						{{if choiceItem.summary && choiceItem.summary!=''}}
+							<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+								<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+							</a>
+						{{else}}
+							<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+						{{/if}}
+					</div>
+					{{/if}}
+					<h5 class="tow_line_text ">
+							{{choiceItem.body}}
+						</h5>
+					<div class="proportion">
+						<span class="bar" style="width:{{choiceItem.preo_val}}%"></span>
+						<span class="preo_val">
+								{{if surveyItem.showVoteCount ==1}}
+									{{choiceItem.count}} / 
+								{{/if}}
+								{{choiceItem.preo_val}}%
+							</span>
+					</div>
+				</li>
+				{{/each}} {{/if}}
+			</ul>
+			{{else}} {{each surveyItem.listVoteQuestion as question questionIndex}}
+			<h4 class="survey_title">{{questionIndex + 1}}. {{question.question}}</h4>
+			<ul class="items items_result" id="surveyResult_{{question.id}}">
+				{{each question.listVoteItem as choiceItem choiceIndex}}
+				<li>
+					<h5>
+						{{if choiceItem.imgpath && choiceItem.imgpath!="" && choiceItem.imgname && choiceItem.imgname!=""}}
+							{{if choiceItem.summary && choiceItem.summary!=''}}
+								<a href="{{serverurl}}/vote/itemDetail.do?itemId={{choiceItem.id}}">
+									<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+								</a>
+							{{else}}
+								<img class="survey_item_img" src="{{choiceItem.imgpath}}/M_{{choiceItem.imgname}}" />
+							{{/if}}
+						{{/if}}
+						{{choiceItem.body}}
+					</h5>
+					<div class="proportion"><span class="bar" style="width:{{choiceItem.preo_val}}%"></span><span class="preo_val">{{choiceItem.preo_val}}%</span></div>
+				</li>
+				{{/each}}
+			</ul>
+			{{/each}} {{/if}}
+			<p class="result_intr">感谢您的参与！</p>
+		</script>
+	
+	
+	<!-- 评论  模板 comment  -->
+	<script id="tmpNewcomments" type="text/html">
+		<h3 class="block_titile"><span>评论</span></h3>
+		<div class="comment_box">
+			<ul class="clearfix">
+				{{each newcommentsList as commentItem}}
+					<li data-id="{{commentItem.id}}" data-lastesId="{{commentItem.id}}">
+						<div class="comment_info">
+							<span class="text">
+								<span class="name">{{commentItem.username}}</span>
+								<span class="time">{{commentItem.createtime | dateFormatComment}}</span>
+							</span>
+							<a href="#" class="praise" id="comment_{{commentItem.id}}"  data-id="{{commentItem.id}}">
+								{{if commentItem.support && commentItem.support != null && commentItem.support >0}}
+									{{commentItem.support}}
+								{{/if}}
+							</a>
+							<a href="#" class="reply_btn" data-id="{{commentItem.id}}"></a>
+						</div>
+						<div class="comment_con">
+							<p class="con_text"><a href="#">{{commentItem.body}} </a></p>
+							{{if commentItem.listchild.length > 0}}
+							<div class="reply_con">
+								<span class="triangle-up"></span>
+								<span class="triangle-up_shadow"></span>
+								{{each commentItem.listchild as item itemIndex}}
+								<div class="reply_item {{if itemIndex > 5}}none{{/if}}">
+									<div class="reply_info clearfix">
+										<span class="left">
+											<span class="name">{{item.username}}</span>
+											{{item.createtime | dateFormatComment}}
+										</span>
+										<span class="right">{{itemIndex + 1}}楼</span></div>
+									<p>{{item.body}}</p>
+								</div>
+								{{/each}}
+								{{if commentItem.listchild.length > 6}}
+								<div class="reply_item open_all_item">
+									<a href="#" class="open_all">+展开全部楼层</a>
+								</div>
+								{{/if}}
+							</div>
+							{{/if}}
+						</div>
+					</li>
+				{{/each}}
+			</ul>
+		</div>
+	</script>
+	
+	<!-- 分享 模版  -->
+	<script type="text/html" id='shareModel'>
+		<table width="100%">
+			<tr>
+				<td width="25%">
+					<img class='share_logo' onclick="share('sina_weibo')" src="imgs/icon_weibo.png" />
+					<p>新浪微博</p>
+				</td>
+				<td width="25%">
+					<img class='share_logo' onclick="share('wechat_friend')" src="imgs/icon_weixin.png" />
+					<p>微信好友</p>
+				</td>
+				<td width="25%">
+					<img class='share_logo' onclick="share('circle_friend')" src="imgs/icon_firend.png" />
+					<p>朋友圈</p>
+				</td>
+				<td width="25%">
+					{{if supported}}
+					<img class='share_logo' src="imgs/icon_good_ed.png" />
+					{{else}}
+					<img class='share_logo' onclick="support(this)" src="imgs/icon_good.png" />
+					{{/if}}
+					<p>{{number}}</p>
+				</td>
+			</tr>	
+		</table>
+	</script>
+	
+	<script type="text/html" id="tmpHotNews">
+		{{if hotNews!=null && hotNews.length>0}}
+		<h3 class="block_titile"><span>推荐新闻</span></h3>
+		<ul>
+			{{each hotNews as news}}
+				<li class='hotNewsItem' data-newsID="{{news.id}}" data-type="{{news.newsPubExt.type}}" data-infoType="{{news.newsPubExt.infotype}}">
+					<table>
+						<tr>
+							<td class="faceimg_wapper">
+								<img class="faceimg" src="{{news.newsPubExt.faceimgpath}}/S_{{news.newsPubExt.faceimgname}}" />
+							</td>
+							<td class="hotNewsTitle">{{news.shorttitle}}</td>
+						</tr>
+					</table>
+				</li>
+			{{/each}}
+		</ul>
+		{{/if}}
+	</script>
+	
+	<script type="text/javascript" src="js/zepto.min.js" ></script>
+	<script type="text/javascript" src="js/template.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jqthumb.min.js"></script>
+</body>
+</html>

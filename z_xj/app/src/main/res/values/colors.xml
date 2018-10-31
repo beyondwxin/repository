@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="head_background_color">#bf0200</color>
+    <color name="head_background_color_night">#5f0100</color>
+    <color name="white">#FFFFFF</color>
+    <color name="background_tab_pressed">#FFFFFF</color>
+    
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="subscribe_item_selected_stroke">#ffcc3131</color>
+    <color name="category_subscribe_text">#ffffffff</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    <color name="default_text">#ff454545</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#ADADAD</color>
+    <color name="result_view">#b0000000</color>
+    <color name="viewfinder_mask">#90000000</color>
+    <color name="possible_result_points">#c0ffff00</color> 
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="night_text_color">#767c86</color>
+    <color name="night_bg">#202327</color>
+    <color name="night_line_bg">#3e4347</color>
+    <color name="activing_color">#82d169</color>
+    <color name="bjs">#1D88CE</color>
+    <color name="actived_color">#9d9d9d</color>
+    <color name="red">#FF0033</color>
+</resources>

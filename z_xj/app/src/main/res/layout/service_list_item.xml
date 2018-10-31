@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:padding="8dp"
+    >
+    
+    <com.newgen.UI.CircleImageView
+        android:id="@+id/faceImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"	
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        />
+    
+    <TextView 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/faceImage"
+        android:gravity="center_horizontal"
+        android:lines="2"
+        android:layout_marginTop="10dp"
+        />
+    
+</RelativeLayout>

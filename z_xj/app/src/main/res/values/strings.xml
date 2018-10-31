@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">新疆新闻</string>
+    <string name="image">图片</string>
+
+    <!-- 首页 -->
+    <string name="index_text">باش بەت</string>
+    <string name="index_text_h">باس بەت</string>
+
+    <!-- 视频 -->
+    <string name="video_text">بىۋاستە كۆرسىتىش</string>
+    <string name="video_text_h">ارنا</string>
+
+    <!-- 服务 -->
+    <string name="service_text">تۇرمۇش مۇلازىمىتى</string>
+    <string name="service_text_h">قىزمەت وتەۋ</string>
+
+    <!-- 我的 -->
+    <string name="personal_text">مېنىڭ</string>
+    <string name="personal_text_h">مەنىڭ</string>
+
+    <!-- 频道设置 -->
+    <string name="manage_channel">قانال ئورۇنلاشتۇرۇش</string>
+    <string name="manage_channel_m">ᠪᠤᠯᠤᠩ ᠠᠩᠭᠢᠯᠠᠯ ᠤᠨ ᠲᠣᠬᠢᠷᠠᠭᠤᠯᠤᠯᠲᠠ</string>
+    <string name="manage_channel_h">ارناسى قۇرۋ</string>
+
+    <!-- 长按排序或点击删除 -->
+    <string name="subscribe_my_category">ئۇزاق بېسىپ تەرتىپلەڭ ياكى ئۆچۈرۈڭ</string>
+    <string name="subscribe_my_category_m">ᠤᠳᠠᠭᠠᠨ ᠳᠠᠷᠤᠵᠤ ᠳᠠᠷᠠᠭᠠᠯᠠᠯ ᠢ ᠵᠣᠬᠢᠴᠠᠭᠤᠯᠬᠤ ᠪᠤᠶᠤ ᠬᠠᠰᠤᠯᠲᠠ ᠬᠢᠵᠦ ᠪᠣᠯᠤᠨ᠎ᠠ</string>
+    <string name="subscribe_my_category_h">رەت ٴتارتىبى بويىنشا نەمەسە باسىپ بويىنشا ٴوشىرىپ</string>
+
+    <!-- 推荐频道 -->
+    <string name="subscribe_more_category">كۆرسىتىش قانىلى</string>
+    <string name="subscribe_more_category_m">ᠲᠠᠨᠢᠯᠴᠠᠭᠤᠯᠬᠤ ᠰᠤᠪᠠᠭ</string>
+    <string name="subscribe_more_category_h">كورسەتكەن ارناسى</string>
+
+    <!-- 点击添加更多 -->
+    <string name="more_category_tip">تېخىمۇ كۆپ قوشۇش</string>
+    <string name="more_category_tip_h">باسىپ ۇستەمەلەپ اناعۇرلىم كوپ</string>
+
+    <!-- 活动 -->
+    <string name="personal_active">ھەركەتچان</string>
+
+    <!-- 提交 -->
+    <string name="submit">سۇنۇش</string>
+    <string name="submit_h">جىبەرۋ</string>
+    <string name="submit_m">ᠲᠤᠰᠢᠶᠠᠬᠤ</string>
+
+    <!-- 消息推送 -->
+    <string name="personal_message">خەۋەر يوللاش</string>
+    <string name="personal_message_h">حابارىنا قاراعاندا ، جەتكىزۋ</string>
+    
+    <!-- 投诉标题 -->
+    <string name="complain_title">ئەرز تېما</string>
+    <string name="complain_title_h">ارىز - تاقىرىبى</string>
+    
+    <!-- 投诉内容 -->
+    <string name="complain_content">ئەرز قىلىش مەزمۇنى</string>
+    <string name="complain_content_h">ارىز - مازمۇنى</string>
+    
+    <!-- 打开 -->
+    <string name="open">ئېچىش</string>
+    <string name="open_h">اشايىن</string>
+    <!-- 关闭 -->
+    <string name="close">ئەتمەك</string>
+    <string name="close_h">جابۋ</string>
+    <!-- 亮度 -->
+    <string name="personal_brightness">يورۇقلۇقى</string>
+    <string name="personal_brightness_h">جارقىراۋى</string>
+    <!-- 字体设置 -->
+    <string name="personal_font">خەت نۇسخىسى</string>
+    <string name="personal_font_h">ٴارىپ قۇرۋ</string>
+    <!-- 清除缓存 -->
+    <string name="personal_cache">ساقلاش</string>
+    <string name="personal_cache_h">ساقتاۋىشتار الاستاپ ،</string>
+    <!-- 检查版本 -->
+    <string name="personal_version">تەكشۈرۈلگەن نۇسخىسى</string>
+    <string name="personal_version_h">تەكسەرۋ نۇسقا</string>
+    <!-- 关于我们 -->
+    <string name="personal_our">بىز كىم؟</string>
+    <string name="personal_our_h">تۋرالى</string>
+    
+    <string name="get_paper_data">正在拉取数字报数据…</string>
+    <string name="get_news_detail">正在拉取文章数据…</string>
+    <string name="not_paper">当期无报</string>
+    <string name="getDataFial">加载数据失败…</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载……</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新\u2026</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_refreshing_label">正在加载中\u2026</string>
+
+    <!-- 我来说两句 -->
+    <string name="input_pen">مەن ئىككى ئېغىز سۆزلەي</string>
+    <string name="input_pen_m">ᠨᠠᠳᠠᠳᠤ ᠠᠪᠴᠤ ᠬᠡᠯᠡᠪᠡᠯ ᠬᠣᠶᠠᠷ ᠦᠭᠡ</string>
+    <string name="input_pen_h">مەن ەكى اۋىز ٴسوز ايتايىن ،</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <!-- 搜索 -->
+    <string name="search_text">ئىزدەش</string>
+    <string name="search_text_m">ᠨᠡᠩᠵᠢᠯ </string>
+    <string name="search_text_h">اقتارۋ</string>
+
+    <!-- 搜索记录 -->
+    <string name="search_record">ئىزدەش خاتىرىسى</string>
+    <string name="search_record_m">ᠬᠠᠢᠢᠯᠳᠠ ᠲᠡᠮᠳᠡᠭᠯᠡᠯ</string>
+    <string name="search_record_h">ٴتىنتۋ ەستەلىگى</string>
+
+    <!-- 请输入关键字 -->
+    <string name="search_key_word">ئاچقۇچلۇق سۆزنى كىرگۈزۈڭ</string>
+    <string name="search_key_word_m">ᠣᠷᠣᠬ᠋ᠣᠯ ᠵᠠᠩᠭᠢᠯᠠᠭ᠎ᠠ ᠶᠢᠨ ᠦᠰᠦᠭ </string>
+    <string name="search_key_word_h">كىلت ەنگىزۋ ۇسىنىس</string>
+
+    <!-- 搜索结果 -->
+    <string name="search_result">ئىزدەش نەتىجىسى</string>
+    <string name="search_result_m">ᠬᠠᠢᠢᠯᠲᠠ ᠶ᠋ᠢᠨ ᠳ᠋ᠦ᠋ᠩ</string>
+    <string name="search_result_h">ٴتىنتۋ ناتيجەسى</string>
+
+    <!-- 取消 -->
+    <string name="cancel">ئەمەلدىن قالدۇرۇش</string>
+	<string name="cancel_h">بولدىرماۋ</string>
+    <!-- 确定 -->
+    <string name="save">جەزىملەشتۈرۈش</string>
+    <string name="save_h">تۇراقتاندىرۋ</string>
+    
+    <string name="comment">我来评论</string>
+
+    <!-- 登录 -->
+    <string name="login">كىرىش</string>
+    <string name="login_h">كىرۋ</string>
+    <!-- 注册 -->
+    <string name="regist">تىزىمغا ئالدۇرۇش</string>
+    <string name="regist_h">تىركەلۋ</string>
+    <!-- 收藏 -->
+    <string name="collect">يىغىپ ساقلاش</string>
+    <string name="collect_h"> ساقتاۋ</string>
+    <!-- 消息 -->
+    <string name="message">ئۇچۇر</string>
+    <string name="message_h">حابار</string>
+    <!-- 我的订阅 -->
+    <string name="subscription">مېنىڭ مۇشتەرى بولۇش </string>
+    <string name="subscription_h">مەنىڭ جۋرنالعا</string>
+    
+    <!-- 活动广场 -->
+    <string name="active">پائالىيەت مەيدانى</string>
+    <string name="active_h">قيمىلىالاڭىندا</string>
+    
+    <!-- 意见反馈 -->
+    <string name="suggestion">پىكىر- تەكلىپ</string>
+    <string name="suggestion_h">پىكىرىن قابىلداپ ،</string>
+
+    <!-- 直播列表 -->
+    <string name="live">بىۋاسىتە كۆرسىتىش جەدۋىلى</string>
+    <string name="live_h">تىكە تاراتۋ كەستە</string>
+
+    <!-- 投诉列表 -->
+    <string name="complain">ئەرز قىلىش جەدۋىلى</string>
+    <string name="complain_h">كەستە ارىز</string>
+    
+    <!-- 新增投诉 -->
+    <string name="add_complain">يېڭىدىن كۆپەيگەن ئەرز قىلىش</string>
+    <string name="add_complain_h">تىڭنان ارىز -</string>
+    
+
+    <!-- 投诉详情 -->
+    <string name="complain_detail">تەپسىلىي ئەھۋالنى ئەرز</string>
+    <string name="complain_detail_h">جاي - ارىز -</string>
+
+    <!-- 手机号 -->
+    <string name="login_hint">يان تېلېفون نومۇرى</string>
+    <string name="login_hint_m">ᠰᠢᠨ᠎ᠡ ᠭᠠᠷ ᠤᠲᠠᠰᠤᠨ ᠳ᠋ᠤᠭᠠᠷ</string>
+    <string name="login_hint_h">قولفون ٴنومىرلى</string>
+    <!-- 密码 -->
+    <string name="password_hint">مەخپىي سىفىر</string>
+    <string name="password_hint_m">ᠨᠢᠭᠤᠴᠠ  ᠨᠣᠮᠧᠷ</string>
+    <string name="password_hint_h">قۇپيا ءسوز</string>
+    <!-- 忘记密码 -->
+    <string name="forget_password">مەخپىي سىفىرنى ئۇنتۇپ قالغان</string>
+    <string name="forget_password_h">قۇپيا سيفىرىن ۇمىتىپ</string>
+    <string name="forget_password_m">ᠨᠢᠭᠤᠴᠠ ᠨᠣᠮᠧᠷ ᠪᠡᠨ ᠮᠠᠷᠲᠠᠵᠠᠢ</string>
+    
+    
+    <!-- 其他方式登录 -->
+    <string name="login_other">باشقا ئۇسۇل تىزىملىتىش</string>
+    <string name="login_other_h">باسقا دا تاسىلدەرمەن شىقسا</string>
+    <!-- 编辑资料 -->
+    <string name="edit_user">ماتېرىياللارنى تەھرىرلەش</string>
+    <string name="edit_user_m">ᠮᠠᠲ᠋ᠧᠷᠢᠶᠠᠯ ᠢ ᠨᠠᠶᠢᠷᠠᠭᠤᠯᠬᠤ </string>
+    <string name="edit_user_h">ماتەريالداردى رەداكسيالاۋ</string>
+    <!-- 保存 -->
+    <string name="edit_save">ساقلاش</string>
+    <!-- 头像 -->
+    <string name="user_photo">باش سۈرەت</string>
+    <string name="user_photo_m">ᠲᠣᠯᠣᠭᠠᠶ ᠶᠢᠨ ᠬᠦᠷᠦᠭ</string>
+    <string name="user_photo_h">باس سۋرەتى</string>
+
+    <!-- 基本信息 -->
+    <string name="basic_information">ئاساسىي ئۇچۇر</string>
+    <string name="basic_information_h">نەگىزگى ينفورماتسيا</string>
+    <!-- 昵称 -->
+    <string name="nick_name">ئىسىم</string>
+    <string name="nick_name_h">بۇركەنشىك ات</string>
+    <!-- 更多设置 -->
+    <string name="more_setting">قۇرماق</string>
+    <string name="more_setting_h">اناعۇرلىم كوپ قۇرۋ</string>
+    <!-- 手机号 -->
+    <string name="phone_number">يان تېلېفون نومۇرى</string>
+    <string name="phone_number_h">قولفون ٴنومىرلى</string>
+    <!-- 换绑 -->
+    <string name="change_binding">باغلاق ئالماشتۇرۇش</string>
+    <string name="change_binding_h">اۋىستىرۋ بايلاپ</string>
+    <!-- 修改密码 -->
+    <string name="change_password">مەخپىي شىفىرنى ئۆزگەرتىش</string>
+    <string name="change_password_m">ᠨᠢᠭᠤᠴᠠ ᠺᠣᠳ᠋ ᠵᠠᠰᠠᠬᠤ</string>
+    <string name="change_password_h">قۇپيا ٴنومىرىن</string>
+    <!-- 退出登录 -->
+    <string name="logout">چېكىنىش</string>
+    <string name="logout_h">شىعۋ</string>
+    <!-- 确认 -->
+    <string name="comfirm">بېكىتىش</string>
+    <string name="comfirm_h">كەسىم ايتۋ</string>
+
+    <!-- 设置 -->
+    <string name="setting">تەڭشەش</string>
+    <string name="setting_h">ورناتۋ</string>
+
+    <!-- 换绑手机 -->
+    <string name="change_phone">يان تېلېفون ئالماشتۇرۇپ باغلاش</string>
+    <string name="change_phone_h">اۋىستىرۋ قول تەلەفون بايلاپ</string>
+    <string name="change_phone_m">ᠰᠣᠯᠢᠬᠤ ᠭᠠᠷ ᠤᠲᠠᠰᠤ ᠪᠠᠨ ᠤᠶᠠᠬᠤ</string>
+
+    <!-- 请输入新手机号 -->
+    <string name="new_phone">يېڭى تېلېفۇن</string>
+    <string name="new_phone_m">ᠰᠢᠨ᠎ᠡ ᠭᠠᠷ ᠤᠲᠠᠰᠤᠨ ᠳ᠋ᠤᠭᠠᠷ</string>
+    <string name="new_phone_h">جاڭا قول تەلەفون ٴنومىرلى</string>
+
+    <!-- 发送  -->
+    <string name="get_code">ئەۋەتىش</string>
+    <string name="get_code_m">ᠢᠯᠡᠭᠡᠬᠦ</string>
+    <string name="get_code_h">الۋ</string>
+
+    <!-- 验证码 -->
+    <string name="code_hint">دەلىللەش كودى</string>
+    <string name="code_hint_m">ᠰᠢᠯᠭᠠᠬᠤ ᠺᠣᠳ᠋</string>
+    <string name="code_hint_h">دالەلدەۋ سيفرى</string>
+
+    <!-- 请输入旧手机号 -->
+    <string name="old_phone">كونا تېلېفۇن</string>
+    <string name="old_phone_m">ᠬᠠᠭᠤᠴᠢᠨ ᠭᠠᠷ ᠤᠲᠠᠰᠤᠨ ᠳ᠋ᠤᠭᠠᠷ</string>
+    <string name="old_phone_h">كونە قول تەلەفون ٴنومىرلى</string>
+
+    <!-- 请输入旧密码 -->
+    <string name="old_password">كونا مەخپىي سىفىر</string>
+    <string name="old_password_m">ᠬᠠᠭᠤᠴᠢᠨ ᠨᠢᠭᠤᠴᠠ  ᠨᠣᠮᠧᠷ</string>
+    <string name="old_password_h">كونە ەنگىزۋ قۇپيا</string>
+
+    <!-- 请输入新密码 -->
+    <string name="new_password">يېڭى مەخپىي شىفىرنى كىرگۈزۈڭ</string>
+    <string name="new_password_m">ᠰᠢᠨ᠎ᠡ ᠨᠢᠭᠤᠴᠠ ᠺᠣᠳ᠋</string>
+    <string name="new_password_h">جاڭا قۇپيا ەنگىزۋ</string>
+
+    <!-- 请确认密码 -->
+    <string name="repeat_new_password">مەخپىي سىفىرنى جەزملەشتۈرۈش</string>
+    <string name="repeat_new_password_m">ᠰᠢᠨ᠎ᠡ ᠨᠢᠭᠤᠴᠠ  ᠨᠣᠮᠧᠷ</string>
+    <string name="repeat_new_password_h">ۇسىنىس جاڭا قۇپيا</string>
+
+    <!-- 两次密码不一致 -->
+    <string name="password_no_same">ئىككى قېتىم مەخپىي نومۇر بىردەك ئەمەس</string>
+    <string name="password_no_same_h">ەكى رەتكى قۇپيا ءسوز ۇقساماي قالدى</string>
+
+    <!-- 密码由6-10位字符组成 -->
+    <string name="pass_form">مەخپىي نومۇر 10 خانىلىق ھەرپ - بەلگە تەركىب تاپقان</string>
+
+    <!-- 修改失败 -->
+    <string name="revise_fail">تۈزىتىش كىرگۈزۈش مەغلۇپ بولدى</string>
+
+    <!-- 修改成功，请重新登录 -->
+    <string name="revise_success_and_login">ئۆزگەرتىلدى، قايتا تىزىملاش</string>
+
+    <!-- 新闻评论 -->
+    <string name="news_comment">ئاخبارات ئوبزورى</string>
+    <string name="news_comment_h">اقپارات شولۋى</string>
+
+    <!-- 我的收藏 -->
+    <string name="my_collect">يىغىپ ساقلىماق</string>
+    <string name="my_collect_m">ᠮᠢᠨᠦ ᠬᠤᠷᠢᠶᠠᠨ ᠬᠠᠳᠠᠭᠠᠯᠠᠬᠤ</string>
+    <string name="my_collect_h">مەنىڭ ساقتاعان</string>
+
+    <!-- 我的活动 -->
+    <string name="my_active">پائالىيەت</string>
+    <string name="my_active_m">ᠮᠢᠨᠦ ᠠᠵᠢᠯᠯᠠᠭ᠎ᠠ</string>
+    <string name="my_active_h">مەنىڭ قيمىلىن</string>
+
+    <!-- 意见反馈 -->
+    <string name="my_suggestion">پىكىرلىرىگە ئىنكاس قايتۇرۇش</string>
+    <string name="my_suggestion_h">پىكىرىن قابىلداپ ،</string>
+    <string name="my_suggestion_m">ᠰᠠᠨᠠᠯ ᠢ ᠪᠤᠴᠠᠭᠠᠬᠤ</string>
+
+    <!-- 写上您的宝贵意见 -->
+    <string name="suggestion_hint">سىزنىڭ قىممەتلىك پىكىر يېزىپ</string>
+    <string name="suggestion_hint_h">ٴسىزدىڭ جازىپ قۇندى پىكىرلەر</string>
+    <string name="suggestion_hint_m">ᠲᠠᠨ ᠤ ᠨᠠᠨᠳᠢᠨ ᠰᠠᠨᠠᠯ</string>
+
+    <!-- 注册 -->
+    <string name="regist_now">تىزىملاش</string>
+    <string name="regist_now_h">تىركەلۋ</string>
+
+    <!-- 已有账号 -->
+    <string name="regist_tip">ھازىر ھېسابات نومۇرى</string>
+    <string name="regist_tip_h">بۇرىنعى ەسەپ ٴنومىرى</string>
+
+    <!-- 忘记密码 -->
+    <string name="find_password">مەخپىي نومۇرنى ئۇنتۇپ قالدىڭىزمۇ</string>
+    <string name="find_password_h">قۇپيا سيفىرىن ۇمىتىپ</string>
+
+    <!-- 提  交 -->
+    <string name="commit">بەرمەك</string>
+    <string name="commit_h">بەرۋ</string>
+    <!-- 请输入新密码 -->
+    <string name="new_password_hint">يېڭى مەخپىي سىفىر</string>
+    <string name="new_password_hint_m">ᠰᠢᠨ᠎ᠡ ᠨᠢᠭᠤᠴᠠ ᠺᠣᠳ᠋</string>
+    <string name="new_password_hint_h">جاڭا قۇپيا ەنگىزۋ</string>
+
+    <!-- 留言将在筛选后显示，对所有人可见 -->
+    <string name="reply_hint">قالدۇرغان بۇ تاللاپ بولغاندىن كېيىن كۆرسىتىلىشىچە ، ھەممە ئادەمگە دېمەك</string>
+    <string name="directory">往期</string>
+    
+    <!-- 我的消息 -->
+    <string name="my_message">خەۋەر</string>
+    <string name="my_message_m">ᠮᠢᠨᠦ ᠮᠡᠳᠡᠭᠡ</string>
+    <string name="my_message_h">حابار</string>
+    
+    
+    
+    
+    <string name="copyright">Copyright © 2003 shougang.com.cn, All Rights Reserved</string>
+    <string name="email_phone">邮编：100041  查号台：010-88291114</string>
+    <string name="adress">地	址：北京石景山区首钢厂东门</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_suggestion">SuggestionActivity</string>
+    <string name="title_activity_subject_detail">SubjectDetailActivity</string>
+    <string name="title_activity_live_detail">LiveDetailActivity</string>
+    <string name="title_activity_live">LiveActivity</string>
+    <string name="title_activity_complain_list">ComplainListActivity</string>
+    <string name="title_activity_office_hall">OfficeHallActivity</string>
+    <string name="title_activity_complain_detail">ComplainDetailActivity</string>
+    <string name="title_activity_add_complain">AddComplainActivity</string>
+
+</resources>

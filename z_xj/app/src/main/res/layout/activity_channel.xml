@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/channel_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        >
+        
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="3dp"
+            android:src="@drawable/channel_close"
+            />
+       
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        
+         <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_channel"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/my_channel_tip"
+        android:layout_below="@+id/channel_header"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribe_my_category"
+        android:textColor="#7d7d7d"
+        android:textSize="16sp"
+        />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_below="@id/my_channel_tip" >
+        
+        <LinearLayout
+            android:id="@+id/subscribe_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="14dp" >
+    
+		    <com.newgen.UI.channel.DragGrid
+			    android:id="@+id/userGridView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:horizontalSpacing="14dip"
+			    android:listSelector="@android:color/transparent"
+			    android:numColumns="2"
+			    android:scrollbars="vertical"
+			    android:stretchMode="columnWidth"
+			    android:verticalSpacing="12.0px"
+			    android:layout_marginTop="12dp"
+			     />
+		    
+		    <TextView
+                android:id="@+id/more_category_text"
+                android:layout_width="match_parent"
+            	android:layout_height="wrap_content"
+            	android:textColor="#000"
+            	android:textSize="18sp"
+            	android:layout_marginTop="41dp"
+                android:text="@string/subscribe_more_category" />
+		    
+		    <TextView
+                android:id="@+id/more_category_tip"
+                android:layout_marginTop="8dp"
+        		android:layout_width="match_parent"
+        		android:layout_height="wrap_content"
+        		android:text="@string/more_category_tip"
+        		android:textColor="#7d7d7d"
+        		android:textSize="16sp"
+                />
+		    
+		    <com.newgen.UI.channel.OtherGridView
+                android:id="@+id/otherGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px"
+                android:layout_marginTop="10dp"
+                 />
+		    
+	    </LinearLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>

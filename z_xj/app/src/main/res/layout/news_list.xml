@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    >
+    
+    <com.newgen.UI.RoundImageView
+	    android:id="@+id/newsPic"
+	    android:layout_width="93.3dp"
+	    android:layout_height="70dp"
+	    android:layout_marginLeft="4dp"
+	    android:contentDescription="@string/image"
+	    android:scaleType="centerCrop"
+	    android:layout_marginTop="8dp"
+	    android:layout_marginBottom="8dp"
+	    android:layout_alignParentRight="true"
+	    />
+
+    <LinearLayout
+        android:id="@+id/title_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@+id/newsPic"
+         >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="4dp"
+            android:orientation="vertical" >
+
+            <com.newgen.UI.FontTextView
+                android:id="@+id/newsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:padding="0dp"
+                android:gravity="right"
+                android:textColor="#1d1a1a"
+                android:textSize="@dimen/news_list_title" />
+            
+            <RelativeLayout 
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                >
+                
+                <TextView
+                    android:id="@+id/news_tag"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#fff"
+	                android:textSize="@dimen/news_list_newstag"
+	                android:layout_gravity="bottom"
+	                android:text="原创"
+	                android:padding="2dp"
+	                android:background="@drawable/news_tag_bg"
+	                android:visibility="gone"
+	                />
+	                
+                <TextView
+	                android:id="@+id/commen_time"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#aab1b3"
+	                android:textSize="@dimen/news_list_degist"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentBottom="true"
+	                />
+                
+                <ImageView 
+                    android:id="@+id/ImageView1"
+		            android:layout_width="13dp"
+		            android:layout_height="13dp"
+		            android:layout_marginBottom="1dp"
+			        android:src="@drawable/comment_num"  
+			        android:layout_alignParentRight="true"
+	                android:layout_alignParentBottom="true"
+		            />
+                
+                <TextView
+	                android:id="@+id/commen_num"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:textColor="#aab1b3"
+	                android:textSize="@dimen/news_list_degist"
+	                android:layout_toLeftOf="@+id/ImageView1"
+	                android:layout_alignParentBottom="true"
+	                android:layout_marginRight="2dp"
+	                />
+                
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    
+    
+    
+
+    <!-- 新闻标签 -->
+
+    <LinearLayout
+        android:id="@+id/news_commen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/bottom_down_reply" />
+
+        <TextView
+            android:id="@+id/newsCommen"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/news_list_newsCommen" />
+    </LinearLayout>
+    
+
+    <TextView
+        android:id="@+id/newsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignBottom="@+id/title_linear"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/icon_bg"
+        android:gravity="center_vertical"
+        android:text="标签"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/news_list_newstag"
+        android:layout_marginRight="5dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

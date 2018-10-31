@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="1dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        
+        <com.newgen.UI.ZoomImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true" />
+        
+    </LinearLayout>
+    
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scrollbars="none"
+        android:layout_gravity="bottom"
+        >
+        
+        <LinearLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"
+	        android:orientation="vertical" >
+	        
+	        <TextView
+		         android:id="@+id/imgState"
+		         android:layout_width="match_parent"
+		         android:layout_height="wrap_content"
+		         android:textColor="#fff" 
+		         android:lineSpacingMultiplier="1.2"
+		         android:textSize="14sp"
+		         />
+	        
+	    </LinearLayout>
+        
+    </ScrollView>
+
+</FrameLayout>

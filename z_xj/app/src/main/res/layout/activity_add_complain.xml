@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/head_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFF" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/back_arrow" />
+        
+        <ImageView
+            android:id="@+id/submit_complain"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/submit" />
+        
+
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/add_complain"
+            android:textSize="18sp"
+            />
+        
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#b5b5b5"
+            android:layout_alignParentBottom="true"
+            />
+            
+    </RelativeLayout>
+    
+    <EditText
+        android:id="@+id/title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/head_rlayout"
+        android:gravity="right|center_vertical"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="4dp"
+        android:hint="@string/complain_title"
+        android:background="@drawable/complain_detail_shape_corner"
+        />
+    
+    <EditText
+        android:id="@+id/content_txt"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/title_txt"
+        android:gravity="right|top"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="4dp"
+        android:hint="@string/complain_content"
+        android:background="@drawable/complain_detail_shape_corner"
+        />
+    
+</RelativeLayout>

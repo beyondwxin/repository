@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:id="@+id/belowlayout" 
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <RadioGroup 
+            android:id="@+id/main_radiogroup"
+            android:layout_width="match_parent" 
+	        android:layout_height="wrap_content" 
+	        android:orientation="horizontal"
+            >
+            
+            <RadioButton
+                android:checked="true"
+	            android:paddingTop="6dp"
+	            android:id="@+id/index_button" 
+		        android:layout_width="0.0dip" 
+		        android:layout_weight="1.0"
+		        android:layout_height="wrap_content" 
+		        android:drawableTop="@drawable/bg_index_view_m"
+		        android:textSize="8.0sp"  
+		        android:background="@null"
+		        android:button="@null"
+		        android:gravity="center"/>
+        
+	        <RadioButton
+	            android:paddingTop="6dp"
+	            android:id="@+id/video_button" 
+		        android:layout_width="0.0dip" 
+		        android:layout_weight="1.0"
+		        android:layout_height="wrap_content" 
+		        android:drawableTop="@drawable/bg_video_view_m" 
+		        android:textSize="8.0sp" 
+		        android:background="@null"
+		        android:button="@null"
+		        android:gravity="center"/>
+	        
+	        <RadioButton
+	            android:paddingTop="6dp"
+	            android:id="@+id/epaper_button" 
+		        android:layout_width="0.0dip" 
+		        android:layout_weight="1.0"
+		        android:layout_height="wrap_content" 
+		        android:drawableTop="@drawable/bg_epaper_view_m" 
+		        android:textSize="8.0sp" 
+		        android:background="@null"
+		        android:button="@null"
+		        android:gravity="center"/>
+	        
+	        <RadioButton
+	            android:paddingTop="6dp"
+	            android:id="@+id/personal_button" 
+		        android:layout_width="0.0dip" 
+		        android:layout_weight="1.0"
+		        android:layout_height="wrap_content" 
+		        android:drawableTop="@drawable/bg_personal_view_m" 
+		        android:textSize="8.0sp" 
+		        android:background="@null"
+		        android:button="@null"
+		        android:gravity="center"/>
+            
+        </RadioGroup>
+        
+  	</LinearLayout>
+  	
+    <LinearLayout
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"
+        android:layout_above="@+id/belowlayout"
+        android:orientation="horizontal"
+        >
+   	</LinearLayout>
+   	
+    <LinearLayout 
+        android:id="@+id/fill_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/index_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="#F90202"
+        android:gravity="center_vertical"
+        >
+	    
+        <ImageView
+			android:id="@+id/iv_go_languagePage"
+			android:layout_width="wrap_content"   
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="7dp"
+			android:clickable="true"
+			android:src="@drawable/m_logo"  
+            />
+        
+        <View 
+            android:layout_width="0dp"   
+			android:layout_height="30dp" 
+			android:layout_weight="1"/>
+        
+         <ImageView 
+             android:id="@+id/search_imgView"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+			 android:layout_marginRight="10dp"
+             android:src="@drawable/search_white"
+             />
+            
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/header_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f1f1f1"
+        android:layout_below="@+id/index_header"
+        android:orientation="horizontal"
+        >
+   	</LinearLayout>
+   	
+    <RelativeLayout
+	    android:id="@+id/pager_layout" 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/line"
+        android:layout_below="@+id/fill_header"
+        android:layout_marginBottom="2dp"
+        >
+	    
+    </RelativeLayout>
+
+</RelativeLayout>

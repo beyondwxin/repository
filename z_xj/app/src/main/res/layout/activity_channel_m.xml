@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/channel_header"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+    	android:layout_marginRight="15dp"
+    	android:layout_marginTop="5dp"
+        >
+        
+        <ImageView
+            android:id="@+id/imageview_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:padding="3dp"
+            android:src="@drawable/channel_close"
+            />
+       
+        
+        <View 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            />
+        
+         <com.newgen.UI.MongolTextView 
+            android:id="@+id/head_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/manage_channel_m"
+            android:textColor="#000"
+            android:textSize="18sp"
+            />
+        
+    </LinearLayout>
+    
+    
+    <View 
+        android:id="@+id/head_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"
+        android:layout_below="@+id/channel_header"
+        />
+    
+    <com.newgen.UI.MongolTextView  
+        android:id="@+id/my_channel_tip"
+        android:layout_below="@+id/head_line"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/subscribe_my_category_m"
+        android:textColor="#7d7d7d"
+        android:textSize="16sp"
+        android:layout_marginLeft="15dp"
+    	android:layout_marginRight="15dp"
+        />
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:layout_below="@id/my_channel_tip"
+        android:layout_marginLeft="15dp"
+    	android:layout_marginRight="15dp"
+         >
+        
+        <LinearLayout
+            android:id="@+id/subscribe_main_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="14dp" >
+    
+		    <com.newgen.UI.channel.MDragGrid
+			    android:id="@+id/userGridView"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center"
+			    android:horizontalSpacing="14dip"
+			    android:listSelector="@android:color/transparent"
+			    android:numColumns="2"
+			    android:scrollbars="vertical"
+			    android:stretchMode="columnWidth"
+			    android:verticalSpacing="12.0px"
+			    android:layout_marginTop="12dp"
+			     />
+		    
+		    <com.newgen.UI.MongolTextView  
+                android:id="@+id/more_category_text"
+                android:layout_width="match_parent"
+            	android:layout_height="46dp"
+            	android:textColor="#000"
+            	android:textSize="18sp"
+            	android:layout_marginTop="41dp"
+                android:text="@string/subscribe_more_category_m" />
+		    
+		    <com.newgen.UI.MongolTextView  
+                android:id="@+id/more_category_tip"	
+                android:layout_marginTop="8dp"
+        		android:layout_width="match_parent"
+        		android:layout_height="46dp"
+        		android:text="@string/more_category_tip"
+        		android:textColor="#7d7d7d"
+        		android:textSize="16sp"
+        		android:visibility="gone"
+                />
+		    
+		    <com.newgen.UI.channel.OtherGridView
+                android:id="@+id/otherGridView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="14dip"
+                android:listSelector="@android:color/transparent"
+                android:numColumns="2"
+                android:scrollbars="vertical"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="14.0px"
+                android:layout_marginTop="10dp"
+                 />
+		    
+	    </LinearLayout>
+
+    </ScrollView>
+    
+</RelativeLayout>

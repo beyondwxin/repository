@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   	android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal" >
+    
+    <TextView 
+	    android:id="@+id/summary"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:textColor="#555"
+	    android:layout_centerVertical="true"
+	    android:visibility="gone"
+	    />
+    	
+	<com.newgen.UI.MongolTextView
+	    android:id="@+id/title"
+	    android:textColor="#555"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:textSize="18sp"	
+	    android:layout_toRightOf="@id/summary"
+	    android:layout_alignBottom="@id/summary"
+	    android:paddingTop="3dp"
+	    android:paddingBottom="3dp"
+	    android:gravity="top"
+	    />
+</RelativeLayout>

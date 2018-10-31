@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:descendantFocusability="blocksDescendants">
+
+    <com.newgen.UI.PullToRefreshView
+        android:id="@+id/refresh_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ScrollView
+            android:id="@+id/scroll_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/runImgBlock"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginBottom="3dp">
+
+                    <com.newgen.UI.RunImageViewPager
+                        android:id="@+id/image_wall_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:fadingEdge="none"
+                        android:spacing="3dip"
+                        android:unselectedAlpha="1" />
+
+                    <com.newgen.UI.MongolTextView
+                        android:id="@+id/txt_gallerytitle"
+                        android:layout_width="37dp"
+                        android:layout_height="200dp"
+                        android:padding="8dp"
+                        android:layout_gravity="right"
+                        android:alpha="50"
+                        android:background="@drawable/index_run_img_title_shape_corner_m"
+                        app:text="dddddd"></com.newgen.UI.MongolTextView>
+
+                    <com.newgen.UI.MongolTextView
+                        android:id="@+id/txt_gallerycount"
+                        android:layout_width="25dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="25dp"
+                        android:alpha="50"
+                        android:background="@drawable/index_run_img_title_shape_corner_m"
+                        android:gravity="bottom|right"
+                        android:visibility="gone"></com.newgen.UI.MongolTextView>
+
+                </FrameLayout>
+
+                <com.newgen.UI.MyGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray"
+                    android:gravity="center_horizontal"
+                    android:listSelector="@color/gray"
+                    android:numColumns="3"
+                    android:scrollbars="none"
+                    android:verticalSpacing="1dp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.newgen.UI.PullToRefreshView>
+
+</LinearLayout>

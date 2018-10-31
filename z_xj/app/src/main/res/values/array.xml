@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="font_size">  
+        <item>چوڭ ھەرپ</item>  
+        <item>ئوتتۇرا نومۇرلۇق خەت</item>  
+        <item>كىچىك خەت</item>  
+    </string-array> 
+    
+    
+    <string-array name="font_size_m">  
+        <item>ᠴᠤᠤ</item>  
+        <item>ᠠᠶᠠᠳᠠᠬᠤ</item>  
+        <item>ᠪᠠᠭ᠎ᠠ ᠨᠣᠮᠧᠷ</item>  
+    </string-array> 
+    
+    
+</resources>

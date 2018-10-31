@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.newgen.xj_app"
+    android:versionCode="1"
+    android:versionName="1.1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="21" />
+
+    <!-- Android 网络使用权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_fEXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 添加分享必要的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 添加个推必要的权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 添加友盟必要的权限  5a4af74f8f4a9d3535000146 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- 浮动通知权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 自定义权限 -->
+    <uses-permission android:name="getui.permission.GetuiService.com.newgen.xj_app" />
+    <!-- 替换为第三方应用的包名 -->
+    <permission
+        android:name="getui.permission.GetuiService.com.newgen.xj_app"
+        android:protectionLevel="normal" />
+
+    <!-- 替换为第三方应用的包名 -->
+    <application
+        android:name="com.newgen.init.MyApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:testOnly="true"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.2" />
+
+        <activity
+            android:name="com.newgen.xj_app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.newgen.xj_app.ww.YDActivity" />
+        <activity
+            android:name="com.newgen.xj_app.ww.MainFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.newgen.xj_app.ww.ChannelActivity" />
+        <activity android:name="com.newgen.xj_app.hw.HChannelActivity" />
+        <activity android:name="com.newgen.xj_app.mw.MChannelActivity" />
+        <activity android:name="com.newgen.xj_app.detail.ww.EpaperArticleDetailActivity" />
+        <activity android:name="com.newgen.xj_app.ww.ShowImageActivity" />
+        <activity
+            android:name="com.newgen.xj_app.detail.ww.NewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.newgen.xj_app.detail.mw.MNewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.newgen.xj_app.detail.hw.HNewsDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.newgen.xj_app.detail.ww.ImgNewsDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.newgen.xj_app.detail.hw.HImgNewsDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.newgen.xj_app.detail.mw.MImgNewsDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.newgen.xj_app.detail.ww.LinkDetailActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newgen.xj_app.detail.hw.HLinkDetailActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newgen.xj_app.detail.mw.MLinkDetailActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.newgen.xj_app.ww.CodeScanActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.newgen.xj_app.ww.SearchActivity" />
+        <activity android:name="com.newgen.xj_app.mw.MSearchActivity" />
+        <activity android:name="com.newgen.xj_app.hw.HSearchActivity" />
+        <activity android:name="com.newgen.xj_app.ww.SearchResultActivity" />
+        <activity android:name="com.newgen.xj_app.hw.HSearchResultActivity" />
+        <activity android:name="com.newgen.xj_app.mw.MSearchResultActivity" />
+        <activity android:name="com.newgen.xj_app.user.LoginActivity" />
+        <activity android:name="com.newgen.xj_app.user.HLoginActivity" />
+        <activity android:name="com.newgen.xj_app.user.MLoginActivity" />
+        <activity android:name="com.newgen.xj_app.user.UpdateUserInfoActivity" />
+        <activity android:name="com.newgen.xj_app.user.HUpdateUserInfoActivity" />
+        <activity android:name="com.newgen.xj_app.user.MUpdateUserInfoActivity" />
+        <activity android:name="com.newgen.xj_app.user.ChangePwdActivity" />
+        <activity android:name="com.newgen.xj_app.user.HChangePwdActivity" />
+        <activity android:name="com.newgen.xj_app.user.MChangePwdActivity" />
+        <activity android:name="com.newgen.xj_app.user.ChangePhoneActivity" />
+        <activity android:name="com.newgen.xj_app.user.HChangePhoneActivity" />
+        <activity android:name="com.newgen.xj_app.user.MChangePhoneActivity" />
+        <activity android:name="com.newgen.xj_app.detail.ww.NewsReviewActivity" />
+        <activity android:name="com.newgen.xj_app.detail.mw.MNewsReviewActivity" />
+        <activity android:name="com.newgen.xj_app.detail.hw.HNewsReviewActivity" />
+        <activity android:name="com.newgen.xj_app.ww.CollectListActivity" />
+        <activity android:name="com.newgen.xj_app.hw.HCollectListActivity" />
+        <activity android:name="com.newgen.xj_app.mw.MCollectListActivity" />
+        <activity android:name="com.newgen.xj_app.user.UserRegistActivity" />
+        <activity android:name="com.newgen.xj_app.user.HUserRegistActivity" />
+        <activity android:name="com.newgen.xj_app.user.MUserRegistActivity" />
+        <activity android:name="com.newgen.xj_app.user.FindPasswordActivity" />
+        <activity android:name="com.newgen.xj_app.user.HFindPasswordActivity" />
+        <activity android:name="com.newgen.xj_app.user.MFindPasswordActivity" />
+        <activity android:name="com.newgen.xj_app.ww.ChangeThemeActivty" />
+        <activity android:name="com.newgen.xj_app.ww.MessageActivity" />
+        <activity android:name="com.newgen.xj_app.hw.HMessageActivity" />
+        <activity android:name="com.newgen.xj_app.mw.MMessageActivity" />
+        <activity android:name="com.newgen.xj_app.ww.ActiveActivity" />
+        <activity android:name="com.newgen.xj_app.hw.HActiveActivity" />
+        <activity android:name="com.newgen.xj_app.mw.MActiveActivity" />
+        <activity android:name="com.newgen.xj_app.ww.AboutUsActivity" />
+        <activity android:name="com.newgen.xj_app.detail.ww.ActiveDetailActivity" />
+        <activity android:name="com.newgen.xj_app.detail.mw.MActiveDetailActivity" />
+        <activity android:name="com.newgen.xj_app.detail.mw.MServiceDetailActivity" />
+        <activity
+            android:name="com.newgen.xj_app.SelectLanguageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.newgen.xj_app.mw.MMainFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.newgen.xj_app.hw.HMainFragmentActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.newgen.xj_app.user.SettingActivity" />
+        <activity android:name="com.newgen.xj_app.user.HSettingActivity" />
+        <activity android:name="com.newgen.xj_app.user.SuggestionActivity" />
+        <activity android:name="com.newgen.xj_app.user.HSuggestionActivity" />
+        <activity android:name="com.newgen.xj_app.user.MSuggestionActivity" />
+        <activity
+            android:name="com.newgen.xj_app.detail.ww.SubjectDetailActivity"
+            android:label="@string/title_activity_subject_detail" />
+        <activity
+            android:name="com.newgen.xj_app.detail.mw.MSubjectDetailActivity"
+            android:label="@string/title_activity_subject_detail" />
+        <activity
+            android:name="com.newgen.xj_app.detail.ww.LiveDetailActivity"
+            android:label="@string/title_activity_live_detail" />
+        <activity
+            android:name="com.newgen.xj_app.detail.mw.MLiveDetailActivity"
+            android:label="@string/title_activity_live_detail" />
+        <activity
+            android:name="com.newgen.xj_app.detail.hw.HLiveDetailActivity"
+            android:label="@string/title_activity_live_detail" />
+
+        <!-- 分享配置开始 -->
+
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- （3.1.0版本之后（包含3.1.0）才需要注册此Activity）如果集成QQ分享，或者使用QQ客户端来进行QQ空间的分享，须要在此处添加一个回调activity -->
+        <!-- 其中的scheme是“tencent”前缀再开发者应用的加上appId。 -->
+        <activity
+            android:name="cn.sharesdk.tencent.qq.ReceiveActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1101779323" />
+            </intent-filter>
+        </activity>
+
+        <!-- 微信分享 -->
+        <activity
+            android:name="com.newgen.xj_app.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 填写您从Mob开发者后台中得到的Appkey和AppSecret -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="2523529d7bfd0" />
+        <meta-data
+            android:name="Mob-AppSecret"
+            android:value="0b600881582558e3eb53984d8c6b8bba" />
+
+        <!-- 分享配置结束 -->
+
+
+        <!-- 个推配置开始 -->
+        <!-- 配置的第三方参数属性 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="qpGetv99Hy8kGhDH2ANJV2" />
+        <!-- 替换为第三方应用的APPID -->
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="pWlqcEZAuv7CFJiy5RBOg2" />
+        <!-- 替换为第三方应用的APPKEY -->
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="8xCFNO4sQy6oyXEpCuxKo5" />
+        <!-- 替换为第三方应用的APPSECRET -->
+        <!-- 配置SDK核心服务 -->
+
+        <service
+            android:name="com.newgen.service.PushService"
+            android:exported="true"
+            android:label="PushService"
+            android:process=":pushservice" />
+        <service android:name="com.newgen.service.IntentService" />
+        <service
+            android:name="com.igexin.sdk.PushService"
+            android:exported="true"
+            android:label="NotificationCenter"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.igexin.sdk.action.service.message" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name="com.igexin.sdk.PushReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="com.igexin.sdk.action.refreshls" />
+                <!-- 以下三项为可选的action声明，可大大提高service存活率和消息到达速度 -->
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.igexin.sdk.PushActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.igexin.sdk.GActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:process=":pushservice"
+            android:taskAffinity="com.igexin.sdk.PushActivityTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 个推SDK配置结束 -->
+
+
+        <!-- 友盟统计 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5a9cde4ea40fa3046d000204" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng" />
+
+        <activity
+            android:name="com.newgen.xj_app.ww.LiveListActivity"
+            android:label="@string/title_activity_live" />
+        <activity
+            android:name="com.newgen.xj_app.hw.HLiveListActivity"
+            android:label="@string/title_activity_live" />
+        <activity
+            android:name="com.newgen.xj_app.ww.ComplainListActivity"
+            android:label="@string/title_activity_complain_list" />
+        <activity
+            android:name="com.newgen.xj_app.mw.MComplainListActivity"
+            android:label="@string/title_activity_complain_list" />
+        <activity
+            android:name="com.newgen.xj_app.hw.HComplainListActivity"
+            android:label="@string/title_activity_complain_list" />
+        <activity
+            android:name="com.newgen.xj_app.ww.OfficeHallActivity"
+            android:label="@string/title_activity_office_hall" />
+        <activity
+            android:name="com.newgen.xj_app.mw.MOfficeHallActivity"
+            android:label="@string/title_activity_office_hall" />
+        <activity
+            android:name="com.newgen.xj_app.detail.ww.ComplainDetailActivity"
+            android:label="@string/title_activity_complain_detail" />
+        <activity
+            android:name="com.newgen.xj_app.detail.mw.MComplainDetailActivity"
+            android:label="@string/title_activity_complain_detail" />
+        <activity
+            android:name="com.newgen.xj_app.ww.AddComplainActivity"
+            android:label="@string/title_activity_add_complain" />
+        <activity
+            android:name="com.newgen.xj_app.hw.HAddComplainActivity"
+            android:label="@string/title_activity_add_complain" />
+        <activity
+            android:name="com.newgen.xj_app.mw.MAddComplainActivity"
+            android:label="@string/title_activity_add_complain" />
+        <!-- 评论列表界面 -->
+        <activity android:name="com.sohu.cyan.android.sdk.activity.CyanCommentActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/newsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <ImageView
+        android:id="@+id/live_pic"
+        android:layout_width="93.3dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_load_error"
+        android:contentDescription="@string/image" />
+
+    <com.newgen.UI.FontTextView
+        android:id="@+id/live_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/live_pic"
+        android:padding="0dp"
+        android:lines="2"
+        android:gravity="right"
+        android:layout_marginTop="0dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/news_list_title" />
+
+    <!-- 新闻标签 -->
+
+    <TextView
+        android:id="@+id/newsTag"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/newsDigest"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/icon_bg"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/news_list_newstag"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/newsCommen"
+        android:layout_width="wrap_content"
+        android:layout_height="15dp"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/newsTag"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/news_list_newsCommen" />
+    
+    <ImageView 
+        android:layout_height="15dp"
+        android:layout_width="15dp"
+        android:contentDescription="@string/image"
+        android:src="@drawable/bottom_down_reply"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/newsCommen"
+        />
+
+    <com.newgen.UI.FontTextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/live_pic"
+        android:layout_toLeftOf="@+id/live_pic"
+        android:background="@drawable/icon_bg"
+        android:layout_marginRight="5dp"
+        android:textColor="@color/white"
+        android:text="直播" />
+
+    <com.newgen.UI.FontTextView
+        android:id="@+id/live_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toLeftOf="@+id/textView1"
+        android:layout_marginRight="5dp"
+        android:text="TextView" />
+
+</RelativeLayout>

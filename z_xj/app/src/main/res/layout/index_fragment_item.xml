@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <com.newgen.UI.XListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@drawable/list_separator_line"
+        android:dividerHeight="1dp"
+        android:paddingRight="12dp"
+        android:scrollbars="none" />
+
+</LinearLayout>
