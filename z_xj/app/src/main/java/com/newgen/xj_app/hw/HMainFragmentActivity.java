@@ -6,6 +6,7 @@ import com.newgen.fragment.hw.HIndexFragment;
 import com.newgen.fragment.hw.HPersonalFragment;
 import com.newgen.fragment.hw.HServiceFragment;
 import com.newgen.fragment.hw.HVideoFragment;
+import com.newgen.tools.Tools;
 import com.newgen.xj_app.R;
 
 import android.content.Intent;
@@ -55,7 +56,7 @@ public class HMainFragmentActivity extends FragmentActivity implements OnPageCha
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_hmain_fragment);
-		
+		Tools.log("2018   HMainFragmentActivity");
 		// com.getui.demo.DemoPushService 为第三方自定义推送服务
         PushManager.getInstance().initialize(this.getApplicationContext(), com.newgen.service.PushService.class);
         // com.getui.demo.DemoIntentService 为第三方自定义的推送服务事件接收类
