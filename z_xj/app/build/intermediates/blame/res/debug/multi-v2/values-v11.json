@@ -1,29 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\xin_jiang\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "F:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "D:\\xin_jiang\\repository\\z_xj\\app\\src\\main\\res\\values-v11\\styles.xml",
-                    "from": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "182",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "313"
-                    },
-                    "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "4",
-                        "endColumns": "12",
-                        "endOffsets": "184"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\6c1a67330f08153b26909751387c76b8\\res\\values-v11\\values.xml",
+                    "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\b14e9515760488cefd492ce3b5d6de90\\res\\values-v11\\values.xml",
                     "from": {
                         "startLines": "3,10,17,24,31,38,45,52,59,66,73,75,77,79,176,178,180,186,233,280,328",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -39,6 +20,25 @@
                         "endLines": "10,16,22,28,34,40,46,52,58,64,65,66,67,163,164,165,170,216,262,309,356",
                         "endColumns": "12,12,12,12,12,12,12,12,12,12,77,91,89,12,94,116,12,12,12,12,12",
                         "endOffsets": "603,1028,1456,1882,2311,2736,3157,3592,4025,4472,4550,4642,4732,11461,11556,11673,12037,15674,19325,23101,26891"
+                    }
+                },
+                {
+                    "source": "F:\\wuxin\\repository\\z_xj\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "182",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "313"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "184"
                     }
                 }
             ]

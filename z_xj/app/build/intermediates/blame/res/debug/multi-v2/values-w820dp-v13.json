@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\xin_jiang\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "F:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "D:\\xin_jiang\\repository\\z_xj\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "F:\\wuxin\\repository\\z_xj\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "7,9,8",
                         "startColumns": "4,4,4",
