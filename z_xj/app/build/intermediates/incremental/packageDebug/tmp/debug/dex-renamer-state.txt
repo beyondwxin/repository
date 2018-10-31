@@ -1,0 +1,13 @@
+#Wed Oct 31 17:08:41 CST 2018
+path.3=classes.dex
+path.2=classes.dex
+path.1=classes.dex
+path.0=classes.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.3=F\:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.2=F\:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.1=F\:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.0=F\:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13

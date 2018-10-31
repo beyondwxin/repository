@@ -1,0 +1,4 @@
+#Wed Oct 31 17:08:39 CST 2018
+base.0=F\:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\4
+path.0=classes.dex
+renamed.0=classes.dex
