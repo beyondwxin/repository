@@ -266,7 +266,7 @@ public class NewsDetailActivity extends Activity {
 	private void initSysoutFontSize() {
 		// 字号初始化
 		Map<String, ?> map = SharedPreferencesTools.getValue(this,
-				SharedPreferencesTools.KEY_FONT_SIZE);
+				SharedPreferencesTools.KEY_FOUNT_SIZE_WW);
 		try {
 			if (null != map)
 				fontSize = Integer.parseInt((String) map.get("size"));

@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#FFF"
@@ -41,18 +40,17 @@
                     <com.newgen.UI.MongolTextView
                         android:id="@+id/txt_gallerytitle"
                         android:layout_width="37dp"
-                        android:layout_height="200dp"
-                        android:padding="8dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="right"
                         android:alpha="50"
                         android:background="@drawable/index_run_img_title_shape_corner_m"
-                        app:text="dddddd"></com.newgen.UI.MongolTextView>
+                        android:gravity="center"></com.newgen.UI.MongolTextView>
 
                     <com.newgen.UI.MongolTextView
                         android:id="@+id/txt_gallerycount"
                         android:layout_width="25dp"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
                         android:layout_marginLeft="25dp"
                         android:alpha="50"
                         android:background="@drawable/index_run_img_title_shape_corner_m"
@@ -64,14 +62,13 @@
                 <com.newgen.UI.MyGridView
                     android:id="@+id/gridView"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:background="@color/gray"
-                    android:gravity="center_horizontal"
-                    android:listSelector="@color/gray"
+                    android:layout_height="wrap_content"
+                    android:background="#aab1b3"
+                    android:listSelector="@android:color/transparent"
                     android:numColumns="3"
-                    android:scrollbars="none"
-                    android:verticalSpacing="1dp" />
+                    android:verticalSpacing="0.5dp"
+                    android:gravity="center_horizontal"
+                    android:scrollbars="none" />
 
             </LinearLayout>
 

@@ -6,6 +6,7 @@ import com.newgen.fragment.mw.MPersonalFragment;
 import com.newgen.fragment.mw.MServiceFragment;
 import com.newgen.fragment.mw.MVideoFragment;
 import com.newgen.fragment.ww.EpaperFragment;
+import com.newgen.tools.Tools;
 import com.newgen.xj_app.R;
 import com.newgen.xj_app.SelectLanguageActivity;
 
@@ -49,7 +50,7 @@ public class MMainFragmentActivity extends FragmentActivity implements OnPageCha
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_mmain_fragment);
-		
+		Tools.log("2018   MMainFragmentActivity");
 		// com.getui.demo.DemoPushService 为第三方自定义推送服务
         PushManager.getInstance().initialize(this.getApplicationContext(), com.newgen.service.PushService.class);
         // com.getui.demo.DemoIntentService 为第三方自定义的推送服务事件接收类

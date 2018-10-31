@@ -1,34 +1,27 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:background="#FFF"
-    android:padding="5dp">
-
-    <WebView
+    android:padding="5dp"
+     >
+    
+    <WebView 
         android:id="@+id/video_title_html"
-        android:layout_width="50dp"
-        android:layout_height="190dp"
+	    android:layout_width="60dp"
+	    android:layout_height="190dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:layout_marginTop="5dp"
         android:layout_alignParentLeft="true"
-        android:layout_marginRight="5dp"
-        android:layout_marginTop="5dp"
-        android:scrollbars="none" />
-
-    <com.newgen.UI.MongolTextView
-        android:id="@+id/commen_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/videocontroller1"
-        android:layout_toRightOf="@+id/video_title_html"
-        android:layout_marginRight="10dp"
-        android:textColor="#aab1b3"
-        android:layout_marginBottom="5dp"
-        android:textSize="@dimen/news_list_degist" />
+        android:scrollbars="none"
+        />
 
     <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
         android:id="@+id/videocontroller1"
         android:layout_width="match_parent"
-        android:layout_height="190dp"
+        android:layout_height="190dp" 
         android:layout_marginBottom="0dp"
-        android:layout_toRightOf="@+id/commen_time" />
+        android:layout_toRightOf="@+id/video_title_html"
+        />
 
 </RelativeLayout>

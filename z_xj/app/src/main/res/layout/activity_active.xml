@@ -22,14 +22,13 @@
             android:contentDescription="@string/image"
             android:src="@drawable/back_arrow" />
 
-        <TextView 
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:text="@string/my_active"
-            android:textSize="18sp"
-            />
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_centerVertical="true"
+			android:text="@string/my_active"
+			android:textSize="18sp" />
         
         <View 
             android:layout_width="match_parent"
