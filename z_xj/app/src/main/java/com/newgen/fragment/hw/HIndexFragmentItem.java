@@ -162,23 +162,19 @@ public class HIndexFragmentItem extends Fragment implements IXListViewListener{
 		});
 		
 		//接收广播
-
+        try {
             IntentFilter filter = new IntentFilter();
             filter.addAction("com.newgen.sg_news.activity.RETURNTOP");
             mReceiver = new Receiver();
             getActivity().registerReceiver(mReceiver, filter);//注册广播接收者
-
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+		
 		return v;
 	}
-
-	@Override
-	public void onDestroy() {
-		super.onDestroy();
-		if(mReceiver !=null){
-			getActivity().unregisterReceiver(mReceiver);
-		}
-	}
-
+	
+	
 	@Override
 	public void onActivityCreated(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub

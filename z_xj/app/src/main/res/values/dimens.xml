@@ -11,8 +11,5 @@
     <dimen name="news_list_degist">13sp</dimen>
     <dimen name="news_list_newstag">10sp</dimen>
     <dimen name="news_list_newsCommen">12sp</dimen>
-    <!--高度 -->
-    <dimen name="ziti_height">31dp</dimen>
-    <dimen name="ziti_daxiao">22sp</dimen>
 
 </resources>

@@ -61,5 +61,4 @@ dependencies {
     implementation files('libs/utdid4all-1.0.4.jar')
     implementation files('libs/xUtils-2.6.11.jar')
     implementation files('libs/zxing.jar')
-    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
 }

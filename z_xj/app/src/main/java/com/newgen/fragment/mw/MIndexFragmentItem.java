@@ -137,7 +137,6 @@ public class MIndexFragmentItem extends Fragment implements OnHeaderRefreshListe
         txt_gallerycount = (MongolTextView) v.findViewById(R.id.txt_gallerycount);
         txt_gallerytitle = (MongolTextView) v.findViewById(R.id.txt_gallerytitle);
         txt_gallerytitle.setTextColor(Color.parseColor("#FFFFFF"));
-
         scroll_parent = (ScrollView) v.findViewById(R.id.scroll_parent);
 
         mPullDownScrollView = (PullToRefreshView) v.findViewById(R.id.refresh_root);

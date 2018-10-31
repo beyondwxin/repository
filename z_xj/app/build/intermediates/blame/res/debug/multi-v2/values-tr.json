@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
+            "outputFile": "F:\\wuxin\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-tr\\values-tr.xml",
             "map": [
                 {
-                    "source": "F:\\wuxin\\repository\\z_xj\\jcvideoplayer_lib\\build\\intermediates\\packaged_res\\debug\\values-tr\\values-tr.xml",
+                    "source": "F:\\wuxin\\z_xj\\jcvideoplayer_lib\\build\\intermediates\\packaged_res\\debug\\values-tr\\values-tr.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

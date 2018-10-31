@@ -217,8 +217,6 @@ public class Tools {
 		return (int) (dpValue * scale + 0.5f);
 	}
 
-
-
 	/**
 	 * 根据手机的分辨率从 px(像素) 的单位 转成为 dp
 	 */

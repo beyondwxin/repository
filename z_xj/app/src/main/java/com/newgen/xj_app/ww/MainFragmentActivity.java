@@ -8,7 +8,6 @@ import com.newgen.fragment.ww.PersonalFragment;
 import com.newgen.fragment.ww.ServiceFragment;
 import com.newgen.fragment.ww.VideoFragment;
 import com.newgen.tools.SharedPreferencesTools;
-import com.newgen.tools.Tools;
 import com.newgen.xj_app.R;
 import com.newgen.xj_app.R.anim;
 import com.newgen.xj_app.R.id;
@@ -65,7 +64,7 @@ public class MainFragmentActivity extends FragmentActivity implements OnPageChan
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main_fragment);
-		Tools.log("2018   MainFragmentActivity");
+		
 		// com.getui.demo.DemoPushService 为第三方自定义推送服务
         PushManager.getInstance().initialize(this.getApplicationContext(), com.newgen.service.PushService.class);
         // com.getui.demo.DemoIntentService 为第三方自定义的推送服务事件接收类

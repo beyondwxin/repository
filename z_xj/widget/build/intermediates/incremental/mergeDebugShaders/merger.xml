@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="F:\wuxin\repository\z_xj\widget\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\wuxin\repository\z_xj\widget\src\debug\shaders"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="F:\wuxin\z_xj\widget\src\main\shaders"/></dataSet><dataSet config="debug"><source path="F:\wuxin\z_xj\widget\src\debug\shaders"/></dataSet></merger>

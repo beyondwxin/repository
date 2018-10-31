@@ -71,6 +71,7 @@
         <attr name="gravity">
             <!-- these are the same values as the Android Gravity constants -->
             <flag name="top" value="48" />
+            <flag name="right" value="10" />
             <flag name="center" value="17" />
             <flag name="bottom" value="80" />
         </attr>
@@ -91,14 +92,6 @@
         
         <attr name="radius" format="dimension"/>
         
-    </declare-styleable>
-
-    <declare-styleable name="BaseTitleLayout">
-        <attr name="titleText" format="string" />
-        <attr name="titleTextSize" format="dimension" />
-        <attr name="titleBackgroundColor" format="color" />
-        <attr name="titleColor" format="color" />
-        <attr name="backImageDrawable" format="reference" />
     </declare-styleable>
     
     

@@ -24,8 +24,6 @@ public class SharedPreferencesTools {
 	
 	public final static String KEY_DEVICE_ID = "UUID";
 	public final static String KEY_FONT_SIZE = "FONT_SIZE";
-	public final static String KEY_FOUNT_SIZE_WW = "KEY_FOUNT_SIZE_WW";//字体大小 维文
-	public final static String KEY_FOUNT_SIZE_HW = "KEY_FOUNT_SIZE_HW";//字体大小 哈文
 	public final static String KEY_PUSH_CTRL = "IS_PUSH";
 	public final static String KEY_NIGHT ="BT_NIGHT";
 	public final static String KEY_WIFI ="WIFI";
@@ -33,8 +31,6 @@ public class SharedPreferencesTools {
 	public static String SIZENAME_W = "ئوتتۇرا";
 	public static int NORMALSIZE_M = 1;//正文字体大小
 	public static String SIZENAME_M = "ئوتتۇرا";
-	public static int NORMALSIZE = 3;//正文字体大小  1-5  数字越大，字体越大
-	public static String SIZENAME = "标准";
 	
 	
 	

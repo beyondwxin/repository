@@ -373,8 +373,6 @@
             android:label="@string/title_activity_add_complain" />
         <!-- 评论列表界面 -->
         <activity android:name="com.sohu.cyan.android.sdk.activity.CyanCommentActivity" />
-        <activity android:name="com.newgen.xj_app.ww.TextSizeActivity" />
-        <activity android:name="com.newgen.xj_app.hw.HTextSizeActivity" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"

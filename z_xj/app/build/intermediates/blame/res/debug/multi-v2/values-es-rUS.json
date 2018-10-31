@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\wuxin\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
+            "outputFile": "F:\\wuxin\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Administrator\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-21.0.3.aar\\b14e9515760488cefd492ce3b5d6de90\\res\\values-es-rUS\\values.xml",

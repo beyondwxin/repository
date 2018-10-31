@@ -70,13 +70,6 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/rs" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/shaders" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
-      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/res" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/resources" type="java-test-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/assets" type="java-test-resource" />
@@ -84,6 +77,13 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/rs" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src/test/shaders" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/res" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/resources" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/assets" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/aidl" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/rs" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/src/androidTest/shaders" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/assets" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/blame" />
       <excludeFolder url="file://$MODULE_DIR$/build/intermediates/build-info" />
@@ -117,40 +117,38 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 27 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\utdid4all-1.0.4.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\MobCommons-2017.0914.1125.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-Wechat-Favorite-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-SinaWeibo-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\commons-lang-2.4.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-Wechat-Core-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\httpmime-4.1.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\eventbus.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\jcvideoplayer_lib\libs\universal-image-loader-1.9.4-with-sources.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-Wechat-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-Wechat-Moments-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\umeng-analytics-v6.1.2.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-QQ-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\MobTools-2017.0914.1125.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\zxing.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\commons-beanutils-1.7.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-Wechat-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\GetuiSDK2.11.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:appcompat-v7-21.0.3" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\commons-httpclient-3.0.1.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.google.code.gson:gson:2.3.1@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v4-21.0.3" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-1.1.3" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\commons-beanutils-1.7.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\json_simple-1.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\MobTools-2017.0914.1125.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-Core-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\umeng-analytics-v6.1.2.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\com.baidu.tts_2.3.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\umeng-common-1.4.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\zxing.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-Core-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\umeng-common-1.4.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\CySDK.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\com.baidu.tts_2.3.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-SinaWeibo-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-Wechat-Core-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\MobCommons-2017.0914.1125.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\json_simple-1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\httpmime-4.1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\commons-lang-2.4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\xUtils-2.6.11.jar:unspecified@jar" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-annotations:21.0.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\commons-logging-1.1.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\GetuiSDK2.11.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-QQ-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\CySDK.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\xUtils-2.6.11.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-Wechat-Moments-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\json-lib-2.2.2-jdk15.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: com.android.support.constraint:constraint-layout-solver:1.1.3@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\ShareSDK-QZone-3.1.0.jar:unspecified@jar" level="project" />
-    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\repository\z_xj\app\libs\tbs_sdk_thirdapp_v3.5.0.1004_43500_sharewithdownload_withoutGame_obfs_20170801_113025.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\commons-logging-1.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\eventbus.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-Wechat-Favorite-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\jcvideoplayer_lib\libs\universal-image-loader-1.9.4-with-sources.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\utdid4all-1.0.4.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\ShareSDK-QZone-3.1.0.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\commons-httpclient-3.0.1.jar:unspecified@jar" level="project" />
+    <orderEntry type="library" name="Gradle: __local_aars__:F.\wuxin\z_xj\app\libs\json-lib-2.2.2-jdk15.jar:unspecified@jar" level="project" />
     <orderEntry type="module" module-name="jcvideoplayer_lib" />
     <orderEntry type="module" module-name="widget" />
     <orderEntry type="module" module-name="imageMap" />

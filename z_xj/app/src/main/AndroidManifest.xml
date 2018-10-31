@@ -21,8 +21,7 @@
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS"
-        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.CAMERA" />
 
@@ -47,9 +46,9 @@
     <!-- 替换为第三方应用的包名 -->
     <permission
         android:name="getui.permission.GetuiService.com.newgen.xj_app"
-        android:protectionLevel="normal" />
-
+        android:protectionLevel="normal"></permission>
     <!-- 替换为第三方应用的包名 -->
+
     <application
         android:name="com.newgen.init.MyApplication"
         android:allowBackup="true"
@@ -59,6 +58,7 @@
         android:largeHeap="true"
         android:theme="@android:style/Theme.Light.NoTitleBar"
         tools:replace="android:icon, android:theme">
+
         <meta-data
             android:name="android.max_aspect"
             android:value="2.2" />
@@ -72,34 +72,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ww.YDActivity" />
+        <activity android:name=".ww.YDActivity"></activity>
         <activity
             android:name=".ww.MainFragmentActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" />
-        <activity android:name=".ww.ChannelActivity" />
-        <activity android:name=".hw.HChannelActivity" />
-        <activity android:name=".mw.MChannelActivity" />
-        <activity android:name=".detail.ww.EpaperArticleDetailActivity" />
-        <activity android:name=".ww.ShowImageActivity" />
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ww.ChannelActivity"></activity>
+        <activity android:name=".hw.HChannelActivity"></activity>
+        <activity android:name=".mw.MChannelActivity"></activity>
+        <activity android:name=".detail.ww.EpaperArticleDetailActivity"></activity>
+        <activity android:name=".ww.ShowImageActivity"></activity>
         <activity
             android:name=".detail.ww.NewsDetailActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".detail.mw.MNewsDetailActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".detail.hw.HNewsDetailActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".detail.ww.ImgNewsDetailActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".detail.hw.HImgNewsDetailActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".detail.mw.MImgNewsDetailActivity"
-            android:exported="true" />
+            android:exported="true"></activity>
         <activity
             android:name=".detail.ww.LinkDetailActivity"
             android:alwaysRetainTaskState="true"
@@ -140,79 +140,79 @@
             android:name=".ww.CodeScanActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".ww.SearchActivity" />
-        <activity android:name=".mw.MSearchActivity" />
-        <activity android:name=".hw.HSearchActivity" />
-        <activity android:name=".ww.SearchResultActivity" />
-        <activity android:name=".hw.HSearchResultActivity" />
-        <activity android:name=".mw.MSearchResultActivity" />
-        <activity android:name=".user.LoginActivity" />
-        <activity android:name=".user.HLoginActivity" />
-        <activity android:name=".user.MLoginActivity" />
-        <activity android:name=".user.UpdateUserInfoActivity" />
-        <activity android:name=".user.HUpdateUserInfoActivity" />
-        <activity android:name=".user.MUpdateUserInfoActivity" />
-        <activity android:name=".user.ChangePwdActivity" />
-        <activity android:name=".user.HChangePwdActivity" />
-        <activity android:name=".user.MChangePwdActivity" />
-        <activity android:name=".user.ChangePhoneActivity" />
-        <activity android:name=".user.HChangePhoneActivity" />
-        <activity android:name=".user.MChangePhoneActivity" />
-        <activity android:name=".detail.ww.NewsReviewActivity" />
-        <activity android:name=".detail.mw.MNewsReviewActivity" />
-        <activity android:name=".detail.hw.HNewsReviewActivity" />
-        <activity android:name=".ww.CollectListActivity" />
-        <activity android:name=".hw.HCollectListActivity" />
-        <activity android:name=".mw.MCollectListActivity" />
-        <activity android:name=".user.UserRegistActivity" />
-        <activity android:name=".user.HUserRegistActivity" />
-        <activity android:name=".user.MUserRegistActivity" />
-        <activity android:name=".user.FindPasswordActivity" />
-        <activity android:name=".user.HFindPasswordActivity" />
-        <activity android:name=".user.MFindPasswordActivity" />
-        <activity android:name=".ww.ChangeThemeActivty" />
-        <activity android:name=".ww.MessageActivity" />
-        <activity android:name=".hw.HMessageActivity" />
-        <activity android:name=".mw.MMessageActivity" />
-        <activity android:name=".ww.ActiveActivity" />
-        <activity android:name=".hw.HActiveActivity" />
-        <activity android:name=".mw.MActiveActivity" />
-        <activity android:name=".ww.AboutUsActivity" />
-        <activity android:name=".detail.ww.ActiveDetailActivity" />
-        <activity android:name=".detail.mw.MActiveDetailActivity" />
-        <activity android:name=".detail.mw.MServiceDetailActivity" />
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+        <activity android:name=".ww.SearchActivity"></activity>
+        <activity android:name=".mw.MSearchActivity"></activity>
+        <activity android:name=".hw.HSearchActivity"></activity>
+        <activity android:name=".ww.SearchResultActivity"></activity>
+        <activity android:name=".hw.HSearchResultActivity"></activity>
+        <activity android:name=".mw.MSearchResultActivity"></activity>
+        <activity android:name=".user.LoginActivity"></activity>
+        <activity android:name=".user.HLoginActivity"></activity>
+        <activity android:name=".user.MLoginActivity"></activity>
+        <activity android:name=".user.UpdateUserInfoActivity"></activity>
+        <activity android:name=".user.HUpdateUserInfoActivity"></activity>
+        <activity android:name=".user.MUpdateUserInfoActivity"></activity>
+        <activity android:name=".user.ChangePwdActivity"></activity>
+        <activity android:name=".user.HChangePwdActivity"></activity>
+        <activity android:name=".user.MChangePwdActivity"></activity>
+        <activity android:name=".user.ChangePhoneActivity"></activity>
+        <activity android:name=".user.HChangePhoneActivity"></activity>
+        <activity android:name=".user.MChangePhoneActivity"></activity>
+        <activity android:name=".detail.ww.NewsReviewActivity"></activity>
+        <activity android:name=".detail.mw.MNewsReviewActivity"></activity>
+        <activity android:name=".detail.hw.HNewsReviewActivity"></activity>
+        <activity android:name=".ww.CollectListActivity"></activity>
+        <activity android:name=".hw.HCollectListActivity"></activity>
+        <activity android:name=".mw.MCollectListActivity"></activity>
+        <activity android:name=".user.UserRegistActivity"></activity>
+        <activity android:name=".user.HUserRegistActivity"></activity>
+        <activity android:name=".user.MUserRegistActivity"></activity>
+        <activity android:name=".user.FindPasswordActivity"></activity>
+        <activity android:name=".user.HFindPasswordActivity"></activity>
+        <activity android:name=".user.MFindPasswordActivity"></activity>
+        <activity android:name=".ww.ChangeThemeActivty"></activity>
+        <activity android:name=".ww.MessageActivity"></activity>
+        <activity android:name=".hw.HMessageActivity"></activity>
+        <activity android:name=".mw.MMessageActivity"></activity>
+        <activity android:name=".ww.ActiveActivity"></activity>
+        <activity android:name=".hw.HActiveActivity"></activity>
+        <activity android:name=".mw.MActiveActivity"></activity>
+        <activity android:name=".ww.AboutUsActivity"></activity>
+        <activity android:name=".detail.ww.ActiveDetailActivity"></activity>
+        <activity android:name=".detail.mw.MActiveDetailActivity"></activity>
+        <activity android:name=".detail.mw.MServiceDetailActivity"></activity>
         <activity
             android:name=".SelectLanguageActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".mw.MMainFragmentActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name=".hw.HMainFragmentActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
-            android:screenOrientation="portrait" />
-        <activity android:name=".user.SettingActivity" />
-        <activity android:name=".user.HSettingActivity" />
-        <activity android:name=".user.SuggestionActivity" />
-        <activity android:name=".user.HSuggestionActivity" />
-        <activity android:name=".user.MSuggestionActivity" />
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".user.SettingActivity"></activity>
+        <activity android:name=".user.HSettingActivity"></activity>
+        <activity android:name=".user.SuggestionActivity"></activity>
+        <activity android:name=".user.HSuggestionActivity"></activity>
+        <activity android:name=".user.MSuggestionActivity"></activity>
         <activity
             android:name=".detail.ww.SubjectDetailActivity"
-            android:label="@string/title_activity_subject_detail" />
+            android:label="@string/title_activity_subject_detail"></activity>
         <activity
             android:name=".detail.mw.MSubjectDetailActivity"
-            android:label="@string/title_activity_subject_detail" />
+            android:label="@string/title_activity_subject_detail"></activity>
         <activity
             android:name=".detail.ww.LiveDetailActivity"
-            android:label="@string/title_activity_live_detail" />
+            android:label="@string/title_activity_live_detail"></activity>
         <activity
             android:name=".detail.mw.MLiveDetailActivity"
-            android:label="@string/title_activity_live_detail" />
+            android:label="@string/title_activity_live_detail"></activity>
         <activity
             android:name=".detail.hw.HLiveDetailActivity"
-            android:label="@string/title_activity_live_detail" />
+            android:label="@string/title_activity_live_detail"></activity>
 
         <!-- 分享配置开始 -->
 
@@ -285,7 +285,7 @@
             android:name="com.newgen.service.PushService"
             android:exported="true"
             android:label="PushService"
-            android:process=":pushservice" />
+            android:process=":pushservice"></service>
         <service android:name="com.newgen.service.IntentService" />
         <service
             android:name="com.igexin.sdk.PushService"
@@ -331,51 +331,50 @@
         <!-- 友盟统计 -->
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5a9cde4ea40fa3046d000204" />
+            android:value="5a9cde4ea40fa3046d000204"></meta-data>
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="Umeng" />
 
         <activity
             android:name=".ww.LiveListActivity"
-            android:label="@string/title_activity_live" />
+            android:label="@string/title_activity_live"></activity>
         <activity
             android:name=".hw.HLiveListActivity"
-            android:label="@string/title_activity_live" />
+            android:label="@string/title_activity_live"></activity>
         <activity
             android:name=".ww.ComplainListActivity"
-            android:label="@string/title_activity_complain_list" />
+            android:label="@string/title_activity_complain_list"></activity>
         <activity
             android:name=".mw.MComplainListActivity"
-            android:label="@string/title_activity_complain_list" />
+            android:label="@string/title_activity_complain_list"></activity>
         <activity
             android:name=".hw.HComplainListActivity"
-            android:label="@string/title_activity_complain_list" />
+            android:label="@string/title_activity_complain_list"></activity>
         <activity
             android:name=".ww.OfficeHallActivity"
-            android:label="@string/title_activity_office_hall" />
+            android:label="@string/title_activity_office_hall"></activity>
         <activity
             android:name=".mw.MOfficeHallActivity"
-            android:label="@string/title_activity_office_hall" />
+            android:label="@string/title_activity_office_hall"></activity>
         <activity
             android:name=".detail.ww.ComplainDetailActivity"
-            android:label="@string/title_activity_complain_detail" />
+            android:label="@string/title_activity_complain_detail"></activity>
         <activity
             android:name=".detail.mw.MComplainDetailActivity"
-            android:label="@string/title_activity_complain_detail" />
+            android:label="@string/title_activity_complain_detail"></activity>
         <activity
-            android:name=".ww.AddComplainActivity"
-            android:label="@string/title_activity_add_complain" />
+            android:name="com.newgen.xj_app.ww.AddComplainActivity"
+            android:label="@string/title_activity_add_complain"></activity>
         <activity
-            android:name=".hw.HAddComplainActivity"
-            android:label="@string/title_activity_add_complain" />
+            android:name="com.newgen.xj_app.hw.HAddComplainActivity"
+            android:label="@string/title_activity_add_complain"></activity>
         <activity
-            android:name=".mw.MAddComplainActivity"
-            android:label="@string/title_activity_add_complain" />
+            android:name="com.newgen.xj_app.mw.MAddComplainActivity"
+            android:label="@string/title_activity_add_complain"></activity>
         <!-- 评论列表界面 -->
         <activity android:name="com.sohu.cyan.android.sdk.activity.CyanCommentActivity" />
-        <activity android:name=".ww.TextSizeActivity" />
-        <activity android:name=".hw.HTextSizeActivity" />
+
     </application>
 
 </manifest>
