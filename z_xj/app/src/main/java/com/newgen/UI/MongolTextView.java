@@ -1,5 +1,7 @@
 package com.newgen.UI;
 
+import com.newgen.xj_app.R;
+
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -18,8 +20,6 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewTreeObserver;
 
-import com.newgen.xj_app.R;
-
 public class MongolTextView extends View  implements ViewTreeObserver.OnPreDrawListener {
 
 	private final static int DEFAULT_FONT_SIZE_SP = 20;
@@ -30,7 +30,7 @@ public class MongolTextView extends View  implements ViewTreeObserver.OnPreDrawL
     private int mTextColor;
     private float mTextSizePx;
     private Typeface mTypeface;
-    private int mGravity = Gravity.CENTER;
+    private int mGravity = Gravity.TOP;
     private TextPaint mTextPaint;
     protected MongolLayout mLayout;
     protected MongolTextStorage mTextStorage;
@@ -63,7 +63,7 @@ public class MongolTextView extends View  implements ViewTreeObserver.OnPreDrawL
         }
         mTextSizePx = a.getDimensionPixelSize(R.styleable.MongolTextView_textSize, 0);
         mTextColor = a.getColor(R.styleable.MongolTextView_textColor, Color.BLACK);
-        mGravity = a.getInteger(R.styleable.MongolTextView_gravity, Gravity.CENTER);
+        mGravity = a.getInteger(R.styleable.MongolTextView_gravity, Gravity.TOP);
         a.recycle();
 
         mContext = context;
@@ -85,7 +85,7 @@ public class MongolTextView extends View  implements ViewTreeObserver.OnPreDrawL
 
         // initialize the layout, but the height still needs to be set
         final CharSequence text = mTextStorage.getGlyphText();
-        mLayout = new MongolLayout(text, 0, text.length(), mTextPaint, 0, Gravity.CENTER, 1, 0, false, Integer.MAX_VALUE);
+        mLayout = new MongolLayout(text, 0, text.length(), mTextPaint, 0, Gravity.TOP, 1, 0, false, Integer.MAX_VALUE);
 
     }
 

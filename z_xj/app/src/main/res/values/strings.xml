@@ -50,15 +50,15 @@
     <!-- 消息推送 -->
     <string name="personal_message">خەۋەر يوللاش</string>
     <string name="personal_message_h">حابارىنا قاراعاندا ، جەتكىزۋ</string>
-    
+
     <!-- 投诉标题 -->
     <string name="complain_title">ئەرز تېما</string>
     <string name="complain_title_h">ارىز - تاقىرىبى</string>
-    
+
     <!-- 投诉内容 -->
     <string name="complain_content">ئەرز قىلىش مەزمۇنى</string>
     <string name="complain_content_h">ارىز - مازمۇنى</string>
-    
+
     <!-- 打开 -->
     <string name="open">ئېچىش</string>
     <string name="open_h">اشايىن</string>
@@ -80,7 +80,7 @@
     <!-- 关于我们 -->
     <string name="personal_our">بىز كىم؟</string>
     <string name="personal_our_h">تۋرالى</string>
-    
+
     <string name="get_paper_data">正在拉取数字报数据…</string>
     <string name="get_news_detail">正在拉取文章数据…</string>
     <string name="not_paper">当期无报</string>
@@ -126,11 +126,11 @@
 
     <!-- 取消 -->
     <string name="cancel">ئەمەلدىن قالدۇرۇش</string>
-	<string name="cancel_h">بولدىرماۋ</string>
+    <string name="cancel_h">بولدىرماۋ</string>
     <!-- 确定 -->
     <string name="save">جەزىملەشتۈرۈش</string>
     <string name="save_h">تۇراقتاندىرۋ</string>
-    
+
     <string name="comment">我来评论</string>
 
     <!-- 登录 -->
@@ -148,11 +148,11 @@
     <!-- 我的订阅 -->
     <string name="subscription">مېنىڭ مۇشتەرى بولۇش </string>
     <string name="subscription_h">مەنىڭ جۋرنالعا</string>
-    
+
     <!-- 活动广场 -->
     <string name="active">پائالىيەت مەيدانى</string>
     <string name="active_h">قيمىلىالاڭىندا</string>
-    
+
     <!-- 意见反馈 -->
     <string name="suggestion">پىكىر- تەكلىپ</string>
     <string name="suggestion_h">پىكىرىن قابىلداپ ،</string>
@@ -164,11 +164,11 @@
     <!-- 投诉列表 -->
     <string name="complain">ئەرز قىلىش جەدۋىلى</string>
     <string name="complain_h">كەستە ارىز</string>
-    
+
     <!-- 新增投诉 -->
     <string name="add_complain">يېڭىدىن كۆپەيگەن ئەرز قىلىش</string>
     <string name="add_complain_h">تىڭنان ارىز -</string>
-    
+
 
     <!-- 投诉详情 -->
     <string name="complain_detail">تەپسىلىي ئەھۋالنى ئەرز</string>
@@ -186,8 +186,8 @@
     <string name="forget_password">مەخپىي سىفىرنى ئۇنتۇپ قالغان</string>
     <string name="forget_password_h">قۇپيا سيفىرىن ۇمىتىپ</string>
     <string name="forget_password_m">ᠨᠢᠭᠤᠴᠠ ᠨᠣᠮᠧᠷ ᠪᠡᠨ ᠮᠠᠷᠲᠠᠵᠠᠢ</string>
-    
-    
+
+
     <!-- 其他方式登录 -->
     <string name="login_other">باشقا ئۇسۇل تىزىملىتىش</string>
     <string name="login_other_h">باسقا دا تاسىلدەرمەن شىقسا</string>
@@ -332,15 +332,13 @@
     <!-- 留言将在筛选后显示，对所有人可见 -->
     <string name="reply_hint">قالدۇرغان بۇ تاللاپ بولغاندىن كېيىن كۆرسىتىلىشىچە ، ھەممە ئادەمگە دېمەك</string>
     <string name="directory">往期</string>
-    
+
     <!-- 我的消息 -->
     <string name="my_message">خەۋەر</string>
     <string name="my_message_m">ᠮᠢᠨᠦ ᠮᠡᠳᠡᠭᠡ</string>
     <string name="my_message_h">حابار</string>
-    
-    
-    
-    
+
+
     <string name="copyright">Copyright © 2003 shougang.com.cn, All Rights Reserved</string>
     <string name="email_phone">邮编：100041  查号台：010-88291114</string>
     <string name="adress">地	址：北京石景山区首钢厂东门</string>

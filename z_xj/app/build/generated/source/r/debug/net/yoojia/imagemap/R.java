@@ -8,10 +8,10 @@ package net.yoojia.imagemap;
 
 public final class R {
     public static final class drawable {
-        public static final int ic_launcher = 0x7f070094;
+        public static final int ic_launcher = 0x7f070095;
     }
     public static final class layout {
-        public static final int main = 0x7f0a009f;
+        public static final int main = 0x7f0a00a1;
     }
     public static final class string {
         public static final int app_name = 0x7f0d0018;

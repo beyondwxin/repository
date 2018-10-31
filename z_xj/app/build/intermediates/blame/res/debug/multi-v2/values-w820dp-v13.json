@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\wuxin\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "D:\\xin_jiang\\repository\\z_xj\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "F:\\wuxin\\z_xj\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "D:\\xin_jiang\\repository\\z_xj\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
-                        "startLines": "7",
-                        "startColumns": "4",
-                        "startOffsets": "310",
-                        "endColumns": "57",
-                        "endOffsets": "363"
+                        "startLines": "7,9,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "312,420,371",
+                        "endColumns": "57,47,47",
+                        "endOffsets": "365,463,414"
                     },
                     "to": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "57",
-                        "endOffsets": "108"
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,113,161",
+                        "endColumns": "57,47,47",
+                        "endOffsets": "108,156,204"
                     }
                 }
             ]

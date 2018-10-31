@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="ziti_daxiao">50.1111sp</dimen>
+    <dimen name="ziti_height">70.6111dp</dimen>
+</resources>

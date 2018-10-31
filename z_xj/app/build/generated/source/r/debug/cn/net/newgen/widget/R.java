@@ -17,24 +17,24 @@ public final class R {
     public static final class drawable {
         public static final int art_dialog_box_bg = 0x7f07003f;
         public static final int comment_edit_dialog_background = 0x7f07006d;
-        public static final int ic_launcher = 0x7f070094;
-        public static final int publicloading = 0x7f070104;
+        public static final int ic_launcher = 0x7f070095;
+        public static final int publicloading = 0x7f070105;
     }
     public static final class id {
         public static final int alert_txt = 0x7f080022;
-        public static final int cancel_txt = 0x7f080034;
-        public static final int dialog_view = 0x7f080064;
-        public static final int img = 0x7f0800d7;
-        public static final int input_edit = 0x7f0800e1;
-        public static final int ok_txt = 0x7f080137;
-        public static final int tipTextView = 0x7f0801a6;
-        public static final int title_text = 0x7f0801aa;
-        public static final int title_txt = 0x7f0801ab;
+        public static final int cancel_txt = 0x7f080035;
+        public static final int dialog_view = 0x7f080065;
+        public static final int img = 0x7f0800dc;
+        public static final int input_edit = 0x7f0800ee;
+        public static final int ok_txt = 0x7f080141;
+        public static final int tipTextView = 0x7f0801bc;
+        public static final int title_text = 0x7f0801c0;
+        public static final int title_txt = 0x7f0801c1;
     }
     public static final class layout {
-        public static final int art_alert_dialog_layout = 0x7f0a006a;
-        public static final int art_input_dialog_layout = 0x7f0a006b;
-        public static final int my_dialog = 0x7f0a00a1;
+        public static final int art_alert_dialog_layout = 0x7f0a006c;
+        public static final int art_input_dialog_layout = 0x7f0a006d;
+        public static final int my_dialog = 0x7f0a00a3;
     }
     public static final class menu {
         public static final int main = 0x7f0b0002;
