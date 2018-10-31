@@ -13,12 +13,14 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
 import com.newgen.UI.MongolTextView;
 import com.newgen.UI.MyWebView;
 import com.newgen.domain.NewsFile;
 import com.newgen.domain.NewsPub;
 import com.newgen.tools.BitmapTools;
 import com.newgen.tools.PublicValue;
+import com.newgen.tools.Tools;
 import com.newgen.xj_app.R;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
@@ -109,6 +111,7 @@ public class MPublicNewsAdapter extends BaseAdapter {
 
         int type = getItemViewType(position);
 
+
         if (convertView == null) {
             if (type == PublicValue.NEWS_TYPE_COMMON) {// 通用新闻
                 convertView = layoutInflater.inflate(R.layout.news_list_m, null);
@@ -128,7 +131,7 @@ public class MPublicNewsAdapter extends BaseAdapter {
         }
 
         if (type == PublicValue.NEWS_TYPE_COMMON) {// 小图文字新闻
-            this.showCommonNews(convertView, holder, position, parent);
+            this.showCommonNews(convertView, holder, position,parent);
         } else if (type == PublicValue.NEWS_TYPE_VIDEO) { // 视频
             this.ShowVideodata(convertView, videoHolder, position);
         }
@@ -145,27 +148,25 @@ public class MPublicNewsAdapter extends BaseAdapter {
 
 
     private void showCommonNews(View convertView, final NewsWordHolder holder,
-                                int position, ViewGroup parent) {
+                                int position,ViewGroup parent) {
+        Tools.log("showCommonNews 蒙文适配器："+ new Gson().toJson(list.get(position)));
+        Tools.log("showCommonNews  蒙文适配器： getNewsPubExt().getShowstyle()"+list.get(position).getNewsPubExt().getShowstyle());
         final NewsPub news = list.get(position);
 
         currentPosition = position;
 
         holder.commen_time.setTextSize(13);
 
-        int width = (parent.getWidth() - 20) / 3;
-        int height = (width-50) * 3;
-        Log.e("height", height + "");
+        int width = (parent.getWidth() -20)/3;
+        int height = width * 4 /3 ;
         //item的layoutparams用GridView.LayoutParams或者  AbsListView.LayoutParams设置，不能用LinearLayout.LayoutParams
         //convertView.setLayoutParams(new    GridView.LayoutParams(width,height));
-        convertView.setLayoutParams(new AbsListView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, height));
+        convertView.setLayoutParams(new AbsListView.LayoutParams(width, height) );
 
         holder.newsTitle_html.loadUrl("file:///android_asset/title/mwContentComponent.html");
         holder.newsTitle_html.getSettings().setJavaScriptEnabled(true);
         holder.newsTitle_html.addJavascriptInterface(new JSInterface(position), "jsObj");
-        String re = news.getPublishtime().replace('-', '.');
-        String[] re2 = re.split(" ");
-        String re3 = re2[1].substring(0, re2[1].length() - 7);
-        String result = re2[0] + "\t\t" + re3;
+        String result = formatTime(news.getPublishtime());
 
         holder.commen_time.setText(result);
 
@@ -364,7 +365,7 @@ public class MPublicNewsAdapter extends BaseAdapter {
         // TODO Auto-generated method stub
         //[2017-12-05, 08:07:16.847]
         String result = "";
-        SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy.MM.dd");
+        SimpleDateFormat sDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String date = sDateFormat.format(new java.util.Date());
         SimpleDateFormat sTimeFormat = new SimpleDateFormat("HH:mm");
         String time = sTimeFormat.format(new java.util.Date());
@@ -395,7 +396,7 @@ public class MPublicNewsAdapter extends BaseAdapter {
                 }
             }
         } else {
-            result = firstArray[0] + firstArray[1];
+            result = firstArray[0];
         }
         return result;
     }

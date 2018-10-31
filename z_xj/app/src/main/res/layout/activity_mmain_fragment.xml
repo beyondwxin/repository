@@ -110,7 +110,6 @@
 			android:id="@+id/iv_go_languagePage"
 			android:layout_width="wrap_content"   
 			android:layout_height="wrap_content"
-			android:layout_marginLeft="7dp"
 			android:clickable="true"
 			android:src="@drawable/m_logo"  
             />
@@ -124,7 +123,6 @@
              android:id="@+id/search_imgView"
              android:layout_width="wrap_content"
              android:layout_height="wrap_content"
-			 android:layout_marginRight="10dp"
              android:src="@drawable/search_white"
              />
             
